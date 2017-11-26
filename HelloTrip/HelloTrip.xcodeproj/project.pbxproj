@@ -18,6 +18,8 @@
 		5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
+		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
+		5B58E3C21FCA9AAC007EE943 /* ColorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C11FCA9AAC007EE943 /* ColorValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		5B4FC42C1FC6B6CD00628D1B /* Floaty-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-prefix.pch"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-prefix.pch"; sourceTree = "<group>"; };
 		5B4FC42D1FC6B6CD00628D1B /* Floaty-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-umbrella.h"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-umbrella.h"; sourceTree = "<group>"; };
 		5B4FC42E1FC6B6CD00628D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "HelloTrip/Controller/Target Support Files/Floaty/Info.plist"; sourceTree = "<group>"; };
+		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		5B58E3C11FCA9AAC007EE943 /* ColorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorValue.swift; path = HelloTrip/Extensions/ColorValue.swift; sourceTree = SOURCE_ROOT; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
 		F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,8 +108,8 @@
 		2DA34DA41FBDE28100876BF5 /* HelloTrip */ = {
 			isa = PBXGroup;
 			children = (
-				5B1030851FC7C40F004B4C83 /* Extensions */,
-				5B1030841FC7C405004B4C83 /* Resources */,
+				5B58E3C01FCA9A94007EE943 /* Resources */,
+				5B58E3BD1FCA9998007EE943 /* Extensions */,
 				5B1030831FC7C3FB004B4C83 /* Model */,
 				5B1030821FC7C3C5004B4C83 /* View */,
 				2D3C12D61FC5897100F0D99B /* Controller */,
@@ -131,20 +135,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		5B1030841FC7C405004B4C83 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5B1030851FC7C40F004B4C83 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5B4FC4181FC58DD800628D1B /* Frameworks */ = {
@@ -182,6 +172,22 @@
 				5B4FC42F1FC6B6CD00628D1B /* Support Files */,
 			);
 			path = Floaty;
+			sourceTree = "<group>";
+		};
+		5B58E3BD1FCA9998007EE943 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B58E3C01FCA9A94007EE943 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B58E3C11FCA9AAC007EE943 /* ColorValue.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8AEBA466C9705CE319E44199 /* Pods */ = {
@@ -333,12 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
+				5B58E3C21FCA9AAC007EE943 /* ColorValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

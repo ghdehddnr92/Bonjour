@@ -15,10 +15,13 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
        
         // Do any additional setup after loading the view, typically from a nib.
-        let floaty = Floaty()
-        floaty.buttonColor = UIColor.cyan
-       // floaty.addItem(title: "Hello, World!")
-        self.view.addSubview(floaty)
+//        let floaty = Floaty()
+//
+//        floaty.buttonColor = UIColor.purple
+//        floaty.plusColor = UIColor.white
+//
+//       // floaty.addItem(title: "Hello, World!")
+//        self.view.addSubview(floaty)
     }
 
     override func didReceiveMemoryWarning() {

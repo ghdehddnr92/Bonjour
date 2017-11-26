@@ -9,11 +9,19 @@
 import UIKit
 import FSCalendar
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     @IBOutlet weak var calendar: FSCalendar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendar.allowsMultipleSelection = true;
+        calendar.allowsMultipleSelection = true
+        calendar.dataSource = self
+        calendar.delegate = self
+        calendar.swipeToChooseGesture.isEnabled = true
+        
+        let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
+        calendar.appearance.headerTitleColor = newPinkColor
+        calendar.appearance.weekdayTextColor = newPinkColor
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +29,9 @@ class CalendarViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func calendar(calendar: FSCalendar!, didSelectDate date: NSDate!) {
+        
+    }
     /*
     // MARK: - Navigation
 
