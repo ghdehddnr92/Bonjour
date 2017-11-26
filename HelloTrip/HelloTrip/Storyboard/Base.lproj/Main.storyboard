@@ -31,7 +31,7 @@
                                     </connections>
                                 </button>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ui5-1u-qNC" id="BeO-Qj-LJw">
@@ -91,6 +91,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bXY-Vb-1t4" userLabel="Home"/>
                     <navigationItem key="navigationItem" title="Home" id="aN7-vm-57V"/>
+                    <connections>
+                        <outlet property="floatbutton" destination="zv4-xf-j5M" id="h75-MO-QWD"/>
+                        <outlet property="tableView" destination="Wkn-Jd-MgS" id="NyD-Id-q0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByZ-ej-Gg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-oG-t5G" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="I1H-HA-jHt" id="IKp-cX-mph"/>
@@ -450,6 +454,7 @@
         <image name="ticket" width="371" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="FhH-ub-vIZ"/>
         <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>
