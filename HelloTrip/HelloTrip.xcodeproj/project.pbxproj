@@ -34,18 +34,6 @@
 		5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		5B4FC4231FC6B6CD00628D1B /* Floaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
-		5B4FC4241FC6B6CD00628D1B /* FloatyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
-		5B4FC4251FC6B6CD00628D1B /* FloatyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
-		5B4FC4261FC6B6CD00628D1B /* FloatyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
-		5B4FC4271FC6B6CD00628D1B /* FloatyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
-		5B4FC4281FC6B6CD00628D1B /* FloatyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
-		5B4FC4291FC6B6CD00628D1B /* Floaty.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = Floaty.modulemap; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty.modulemap"; sourceTree = "<group>"; };
-		5B4FC42A1FC6B6CD00628D1B /* Floaty.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Floaty.xcconfig; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty.xcconfig"; sourceTree = "<group>"; };
-		5B4FC42B1FC6B6CD00628D1B /* Floaty-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Floaty-dummy.m"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-dummy.m"; sourceTree = "<group>"; };
-		5B4FC42C1FC6B6CD00628D1B /* Floaty-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-prefix.pch"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-prefix.pch"; sourceTree = "<group>"; };
-		5B4FC42D1FC6B6CD00628D1B /* Floaty-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-umbrella.h"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-umbrella.h"; sourceTree = "<group>"; };
-		5B4FC42E1FC6B6CD00628D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "HelloTrip/Controller/Target Support Files/Floaty/Info.plist"; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +65,6 @@
 		2D3C12D61FC5897100F0D99B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5B4FC4301FC6B6CD00628D1B /* Floaty */,
 				2DA34DA71FBDE28100876BF5 /* HomeViewController.swift */,
 				5B4FC41D1FC5905300628D1B /* MapViewController.swift */,
 				5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */,
@@ -141,34 +128,6 @@
 				72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5B4FC42F1FC6B6CD00628D1B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B4FC4291FC6B6CD00628D1B /* Floaty.modulemap */,
-				5B4FC42A1FC6B6CD00628D1B /* Floaty.xcconfig */,
-				5B4FC42B1FC6B6CD00628D1B /* Floaty-dummy.m */,
-				5B4FC42C1FC6B6CD00628D1B /* Floaty-prefix.pch */,
-				5B4FC42D1FC6B6CD00628D1B /* Floaty-umbrella.h */,
-				5B4FC42E1FC6B6CD00628D1B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Floaty";
-			sourceTree = "<group>";
-		};
-		5B4FC4301FC6B6CD00628D1B /* Floaty */ = {
-			isa = PBXGroup;
-			children = (
-				5B4FC4231FC6B6CD00628D1B /* Floaty.swift */,
-				5B4FC4241FC6B6CD00628D1B /* FloatyDelegate.swift */,
-				5B4FC4251FC6B6CD00628D1B /* FloatyItem.swift */,
-				5B4FC4261FC6B6CD00628D1B /* FloatyManager.swift */,
-				5B4FC4271FC6B6CD00628D1B /* FloatyViewController.swift */,
-				5B4FC4281FC6B6CD00628D1B /* FloatyWindow.swift */,
-				5B4FC42F1FC6B6CD00628D1B /* Support Files */,
-			);
-			path = Floaty;
 			sourceTree = "<group>";
 		};
 		5B58E3BD1FCA9998007EE943 /* Extensions */ = {
