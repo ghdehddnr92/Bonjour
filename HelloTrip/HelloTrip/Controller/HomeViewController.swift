@@ -9,7 +9,7 @@
 import UIKit
 import Floaty
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
@@ -17,14 +17,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        // Do any additional setup after loading the view, typically from a nib.
-//        let floaty = Floaty()
-//
-//        floaty.buttonColor = UIColor.purple
-//        floaty.plusColor = UIColor.white
-//
-//       // floaty.addItem(title: "Hello, World!")
-//        self.view.addSubview(floaty)
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,13 +28,13 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) {
-        return 10
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) {
-        let cell = UITableViewCell()
-        cell.textField?.text = "\(indexPath.row)"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+          let cellIdentifier = "HomeCell"
+          let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
         return cell
     }
     
