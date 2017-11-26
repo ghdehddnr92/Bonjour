@@ -8,6 +8,7 @@ target 'HelloTrip' do
  pod 'GoogleMaps'
  pod 'GooglePlaces'
  pod 'FSCalendar'
- # Pods for HelloTrip
+pod 'SSCalendar', '~> 0.0'
+# Pods for HelloTrip
 
 end

@@ -19,6 +19,7 @@
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
+		5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
 		F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				2DA34DA71FBDE28100876BF5 /* HomeViewController.swift */,
 				5B4FC41D1FC5905300628D1B /* MapViewController.swift */,
 				5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */,
+				5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,11 +272,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/SSCalendar/SSCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -290,6 +295,7 @@
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
+				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
