@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C5A70BE093CDD16A84416F /* Pods_HelloTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */; };
+		2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA34DA51FBDE28100876BF5 /* AppDelegate.swift */; };
+		2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA34DA71FBDE28100876BF5 /* HomeViewController.swift */; };
+		2DA34DAB1FBDE28100876BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA34DA91FBDE28100876BF5 /* Main.storyboard */; };
+		2DA34DAD1FBDE28100876BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA34DAC1FBDE28100876BF5 /* Assets.xcassets */; };
+		2DA34DB01FBDE28100876BF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA34DAE1FBDE28100876BF5 /* LaunchScreen.storyboard */; };
+		5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */; };
+		5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */; };
+		5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */; };
+		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
+		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DA34DA21FBDE28100876BF5 /* HelloTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA34DA51FBDE28100876BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DA34DA71FBDE28100876BF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2DA34DAA1FBDE28100876BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA34DAC1FBDE28100876BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA34DAF1FBDE28100876BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DA34DB11FBDE28100876BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5B4FC4231FC6B6CD00628D1B /* Floaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		5B4FC4241FC6B6CD00628D1B /* FloatyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		5B4FC4251FC6B6CD00628D1B /* FloatyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		5B4FC4261FC6B6CD00628D1B /* FloatyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		5B4FC4271FC6B6CD00628D1B /* FloatyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		5B4FC4281FC6B6CD00628D1B /* FloatyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		5B4FC4291FC6B6CD00628D1B /* Floaty.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = Floaty.modulemap; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty.modulemap"; sourceTree = "<group>"; };
+		5B4FC42A1FC6B6CD00628D1B /* Floaty.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Floaty.xcconfig; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty.xcconfig"; sourceTree = "<group>"; };
+		5B4FC42B1FC6B6CD00628D1B /* Floaty-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Floaty-dummy.m"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-dummy.m"; sourceTree = "<group>"; };
+		5B4FC42C1FC6B6CD00628D1B /* Floaty-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-prefix.pch"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-prefix.pch"; sourceTree = "<group>"; };
+		5B4FC42D1FC6B6CD00628D1B /* Floaty-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Floaty-umbrella.h"; path = "HelloTrip/Controller/Target Support Files/Floaty/Floaty-umbrella.h"; sourceTree = "<group>"; };
+		5B4FC42E1FC6B6CD00628D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "HelloTrip/Controller/Target Support Files/Floaty/Info.plist"; sourceTree = "<group>"; };
+		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
+		F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA34D9F1FBDE28100876BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */,
+				06C5A70BE093CDD16A84416F /* Pods_HelloTrip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D3C12D31FC5892A00F0D99B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2DA34DAE1FBDE28100876BF5 /* LaunchScreen.storyboard */,
+				2DA34DA91FBDE28100876BF5 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2D3C12D61FC5897100F0D99B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FC4301FC6B6CD00628D1B /* Floaty */,
+				2DA34DA71FBDE28100876BF5 /* HomeViewController.swift */,
+				5B4FC41D1FC5905300628D1B /* MapViewController.swift */,
+				5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DA34D991FBDE28100876BF5 = {
+			isa = PBXGroup;
+			children = (
+				2DA34DA41FBDE28100876BF5 /* HelloTrip */,
+				2DA34DA31FBDE28100876BF5 /* Products */,
+				5B4FC4181FC58DD800628D1B /* Frameworks */,
+				8AEBA466C9705CE319E44199 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA34DA31FBDE28100876BF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA34DA21FBDE28100876BF5 /* HelloTrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA34DA41FBDE28100876BF5 /* HelloTrip */ = {
+			isa = PBXGroup;
+			children = (
+				5B1030851FC7C40F004B4C83 /* Extensions */,
+				5B1030841FC7C405004B4C83 /* Resources */,
+				5B1030831FC7C3FB004B4C83 /* Model */,
+				5B1030821FC7C3C5004B4C83 /* View */,
+				2D3C12D61FC5897100F0D99B /* Controller */,
+				2D3C12D31FC5892A00F0D99B /* Storyboard */,
+				2DA34DA51FBDE28100876BF5 /* AppDelegate.swift */,
+				2DA34DAC1FBDE28100876BF5 /* Assets.xcassets */,
+				2DA34DB11FBDE28100876BF5 /* Info.plist */,
+			);
+			path = HelloTrip;
+			sourceTree = "<group>";
+		};
+		5B1030821FC7C3C5004B4C83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */,
+				5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B1030831FC7C3FB004B4C83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B1030841FC7C405004B4C83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B1030851FC7C40F004B4C83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B4FC4181FC58DD800628D1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FC4191FC58DD800628D1B /* MapKit.framework */,
+				72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B4FC42F1FC6B6CD00628D1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FC4291FC6B6CD00628D1B /* Floaty.modulemap */,
+				5B4FC42A1FC6B6CD00628D1B /* Floaty.xcconfig */,
+				5B4FC42B1FC6B6CD00628D1B /* Floaty-dummy.m */,
+				5B4FC42C1FC6B6CD00628D1B /* Floaty-prefix.pch */,
+				5B4FC42D1FC6B6CD00628D1B /* Floaty-umbrella.h */,
+				5B4FC42E1FC6B6CD00628D1B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		5B4FC4301FC6B6CD00628D1B /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FC4231FC6B6CD00628D1B /* Floaty.swift */,
+				5B4FC4241FC6B6CD00628D1B /* FloatyDelegate.swift */,
+				5B4FC4251FC6B6CD00628D1B /* FloatyItem.swift */,
+				5B4FC4261FC6B6CD00628D1B /* FloatyManager.swift */,
+				5B4FC4271FC6B6CD00628D1B /* FloatyViewController.swift */,
+				5B4FC4281FC6B6CD00628D1B /* FloatyWindow.swift */,
+				5B4FC42F1FC6B6CD00628D1B /* Support Files */,
+			);
+			path = Floaty;
+			sourceTree = "<group>";
+		};
+		8AEBA466C9705CE319E44199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */,
+				CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA34DA11FBDE28100876BF5 /* HelloTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA34DB41FBDE28100876BF5 /* Build configuration list for PBXNativeTarget "HelloTrip" */;
+			buildPhases = (
+				1C64D52B316C28BADB4B036B /* [CP] Check Pods Manifest.lock */,
+				2DA34D9E1FBDE28100876BF5 /* Sources */,
+				2DA34D9F1FBDE28100876BF5 /* Frameworks */,
+				2DA34DA01FBDE28100876BF5 /* Resources */,
+				F0B9C9093B89F19D5F6B3EC3 /* [CP] Embed Pods Frameworks */,
+				C8137EE08CF08915703364C2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTrip;
+			productName = HelloTrip;
+			productReference = 2DA34DA21FBDE28100876BF5 /* HelloTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA34D9A1FBDE28100876BF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = SSU;
+				TargetAttributes = {
+					2DA34DA11FBDE28100876BF5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2DA34D9D1FBDE28100876BF5 /* Build configuration list for PBXProject "HelloTrip" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA34D991FBDE28100876BF5;
+			productRefGroup = 2DA34DA31FBDE28100876BF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA34DA11FBDE28100876BF5 /* HelloTrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA34DA01FBDE28100876BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA34DB01FBDE28100876BF5 /* LaunchScreen.storyboard in Resources */,
+				2DA34DAD1FBDE28100876BF5 /* Assets.xcassets in Resources */,
+				2DA34DAB1FBDE28100876BF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C64D52B316C28BADB4B036B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTrip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8137EE08CF08915703364C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B9C9093B89F19D5F6B3EC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA34D9E1FBDE28100876BF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
+				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
+				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
+				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
+				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
+				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DA34DA91FBDE28100876BF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA34DAA1FBDE28100876BF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA34DAE1FBDE28100876BF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA34DAF1FBDE28100876BF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA34DB21FBDE28100876BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DA34DB31FBDE28100876BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA34DB51FBDE28100876BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.HelloTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA34DB61FBDE28100876BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.HelloTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA34D9D1FBDE28100876BF5 /* Build configuration list for PBXProject "HelloTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA34DB21FBDE28100876BF5 /* Debug */,
+				2DA34DB31FBDE28100876BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA34DB41FBDE28100876BF5 /* Build configuration list for PBXNativeTarget "HelloTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA34DB51FBDE28100876BF5 /* Debug */,
+				2DA34DB61FBDE28100876BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA34D9A1FBDE28100876BF5 /* Project object */;
+}
