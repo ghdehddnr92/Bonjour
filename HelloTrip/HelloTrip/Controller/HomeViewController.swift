@@ -11,9 +11,6 @@ import Floaty
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet var floatbutton: UIButton!
-    @IBOutlet var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -31,18 +28,6 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) {
-        let cell = UITableViewCell()
-        cell.textField?.text = "\(indexPath.row)"
-        return cell
-    }
-    
-    
 
 }
 
