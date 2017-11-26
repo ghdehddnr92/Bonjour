@@ -249,7 +249,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwb-xc-QHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4036" y="160"/>
+            <point key="canvasLocation" x="4036" y="158.77061469265368"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="aNm-k8-35d">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="3tM-KC-tCW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jtg-DV-QjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4351" y="252"/>
         </scene>
         <!--Diary Context Add View Controller-->
         <scene sceneID="aLO-6E-QuY">
