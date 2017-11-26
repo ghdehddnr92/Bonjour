@@ -454,7 +454,6 @@
         <image name="ticket" width="371" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FhH-ub-vIZ"/>
         <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>
