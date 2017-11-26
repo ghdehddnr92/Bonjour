@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="ui5-1u-qNC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ui5-1u-qNC" id="BeO-Qj-LJw">
@@ -70,6 +70,11 @@
                                                 <constraint firstItem="vWF-0X-yuX" firstAttribute="leading" secondItem="BeO-Qj-LJw" secondAttribute="leading" id="wUu-dv-S6p"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Thumbnailimage" destination="t25-HT-YSG" id="rd8-W5-JMG"/>
+                                            <outlet property="datelabel" destination="Mmz-Fq-MGR" id="XQd-Of-Z9E"/>
+                                            <outlet property="subjectlabel" destination="tHC-if-YDE" id="Q7O-zF-r8y"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -150,7 +155,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="470" id="Msm-s1-HDW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="470" id="Msm-s1-HDW" customClass="DiaryTableViewCell" customModule="HelloTrip" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="470"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Msm-s1-HDW" id="d9E-PH-aCG">
@@ -196,6 +201,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="pN3-On-GcY" secondAttribute="trailing" id="ihZ-6H-FUD"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Thumbnailimage" destination="uIi-7u-D33" id="vUF-IU-XYn"/>
+                                            <outlet property="citylabel" destination="19M-ev-w5N" id="Tev-sL-eIW"/>
+                                            <outlet property="datelabel" destination="Mv9-ao-u6l" id="e1L-9C-EpE"/>
+                                            <outlet property="textlabel" destination="khz-jF-9CL" id="gcZ-W5-HMR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

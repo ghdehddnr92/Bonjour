@@ -10,6 +10,11 @@ import UIKit
 
 class DiaryTableViewCell: UITableViewCell {
 
+    @IBOutlet var Thumbnailimage : UIImageView!
+    @IBOutlet var datelabel : UILabel!
+    @IBOutlet var citylabel : UILabel!
+    @IBOutlet var textlabel : UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
