@@ -468,8 +468,8 @@
     </scenes>
     <resources>
         <image name="f button" width="75" height="75"/>
-        <image name="large ticket" width="524" height="744"/>
-        <image name="ticket" width="492" height="195"/>
+        <image name="large ticket" width="393" height="559"/>
+        <image name="ticket" width="371" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8aX-KE-TjJ"/>
