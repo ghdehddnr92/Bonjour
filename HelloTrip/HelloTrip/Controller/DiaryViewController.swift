@@ -33,6 +33,4 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DiaryTableViewCell
         return cell
     }
-    
-    
 }
