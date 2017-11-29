@@ -14,13 +14,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    var menuShowing = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
     }
-
+    @IBAction func openMenu(_ sender: Any) {
+        if(menuShowing){
+            leadingConstraint.constant = -140
+        }
+        else{
+            leadingConstraint.constant = 0
+        }
+        menuShowing = !menuShowing
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
