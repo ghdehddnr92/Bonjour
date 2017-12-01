@@ -21,7 +21,10 @@
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
 		5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */; };
 		5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */; };
+		5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */; };
+		5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */; };
 		5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */; };
+		5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D701FCEC8E400086634 /* DiaryAddController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +43,10 @@
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		5BD95D701FCEC8E400086634 /* DiaryAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddController.swift; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
 		F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 				5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */,
 				5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */,
 				5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */,
+				5BD95D701FCEC8E400086634 /* DiaryAddController.swift */,
+				5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			children = (
 				5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */,
 				5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */,
+				5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,13 +311,16 @@
 			files = (
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */,
+				5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
+				5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */,
 				5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
+				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
