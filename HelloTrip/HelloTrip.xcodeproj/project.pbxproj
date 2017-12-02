@@ -25,6 +25,7 @@
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
 		5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */; };
 		5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */; };
+		5BD1D0FB1FD2AA2800706D13 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0FA1FD2AA2800706D13 /* GalleryCollectionViewCell.swift */; };
 		5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		5BD1D0FA1FD2AA2800706D13 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				2D7476A71FD2719600E3207E /* GalleryViewController.swift */,
 				2D7476AB1FD27CC100E3207E /* CameraViewController.swift */,
 				2D7476AD1FD27D4A00E3207E /* CameraPreviewViewController.swift */,
+				5BD1D0FA1FD2AA2800706D13 /* GalleryCollectionViewCell.swift */,
 			);
 			name = AddDiary;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7476A81FD2719600E3207E /* GalleryViewController.swift in Sources */,
+				5BD1D0FB1FD2AA2800706D13 /* GalleryCollectionViewCell.swift in Sources */,
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,

@@ -19,14 +19,12 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Photos"
-        
         let layout = UICollectionViewFlowLayout()
         
         myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         myCollectionView.delegate=self
         myCollectionView.dataSource=self
-        myCollectionView.register(PhotoItemCell.self, forCellWithReuseIdentifier: "Cell")
+        myCollectionView.register(GalleryCollectionViewCell.self, forCellWithReuseIdentifier: "PhotoCell")
         myCollectionView.backgroundColor=UIColor.white
         self.view.addSubview(myCollectionView)
         
@@ -41,8 +39,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoItemCell
-        cell.img.image=imageArray[indexPath.item]
+        let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! GalleryCollectionViewCell
+        
+        cell.myImageView.image = imageArray[indexPath.item]
         return cell
     }
     
@@ -134,27 +133,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Pass the selected object to the new view controller.
     }
     */
-    class PhotoItemCell: UICollectionViewCell {
-        
-        var img = UIImageView()
-        
-        override init(frame: CGRect) {
-            super.init(frame: frame)
-            
-            img.contentMode = .scaleAspectFill
-            img.clipsToBounds=true
-            self.addSubview(img)
-        }
-        
-        override func layoutSubviews() {
-            super.layoutSubviews()
-            img.frame = self.bounds
-        }
-        
-        required init?(coder aDecoder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
-    }
+
     
     struct DeviceInfo {
         struct Orientation {

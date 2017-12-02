@@ -329,10 +329,63 @@
                     <view key="view" contentMode="scaleToFill" id="FZx-N2-uvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-Cv-HW1">
+                                <rect key="frame" x="0.0" y="370" width="375" height="248"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f91-xZ-zwK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="vkt-UA-x9z" customClass="GalleryCollectionViewCell" customModule="HelloTrip" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xia-uT-PFa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Xia-uT-PFa" firstAttribute="leading" secondItem="vkt-UA-x9z" secondAttribute="leading" id="GGL-C2-2RB"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xia-uT-PFa" secondAttribute="bottom" id="HtA-uH-cDP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xia-uT-PFa" secondAttribute="trailing" id="guA-Vz-RTK"/>
+                                            <constraint firstItem="Xia-uT-PFa" firstAttribute="top" secondItem="vkt-UA-x9z" secondAttribute="top" id="jiz-yG-0Nt"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="myImageView" destination="Xia-uT-PFa" id="u0b-af-6Et"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0p-Xi-NC8" userLabel="PreView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k0p-Xi-NC8" firstAttribute="top" secondItem="FZx-N2-uvN" secondAttribute="top" id="PU3-62-eFq"/>
+                            <constraint firstItem="WJN-Cv-HW1" firstAttribute="top" secondItem="k0p-Xi-NC8" secondAttribute="bottom" id="RoX-bS-GfU"/>
+                            <constraint firstItem="yFG-3d-dlD" firstAttribute="bottom" secondItem="WJN-Cv-HW1" secondAttribute="bottom" id="XZG-j0-TrI"/>
+                            <constraint firstItem="WJN-Cv-HW1" firstAttribute="leading" secondItem="yFG-3d-dlD" secondAttribute="leading" id="auu-tm-zR7"/>
+                            <constraint firstItem="yFG-3d-dlD" firstAttribute="trailing" secondItem="WJN-Cv-HW1" secondAttribute="trailing" id="eu7-wN-SFd"/>
+                            <constraint firstItem="k0p-Xi-NC8" firstAttribute="leading" secondItem="yFG-3d-dlD" secondAttribute="leading" id="g7a-nW-Cco"/>
+                            <constraint firstItem="WJN-Cv-HW1" firstAttribute="top" secondItem="k0p-Xi-NC8" secondAttribute="bottom" id="k8p-9P-6h8"/>
+                            <constraint firstItem="yFG-3d-dlD" firstAttribute="trailing" secondItem="k0p-Xi-NC8" secondAttribute="trailing" id="sQE-fA-kFD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yFG-3d-dlD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="갤러리" id="f1C-2c-Vj0"/>
+                    <connections>
+                        <outlet property="myCollectionView" destination="WJN-Cv-HW1" id="xT2-og-JEc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT1-DY-Uyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

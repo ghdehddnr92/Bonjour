@@ -33,9 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             gotoVC()
         }
         
-        return true
         GMSServices.provideAPIKey("AIzaSyCaoeHUjFkG-4YvNmh49EsgJN1cpAmHDzg")
         GMSPlacesClient.provideAPIKey("AIzaSyCaoeHUjFkG-4YvNmh49EsgJN1cpAmHDzg")
+        
         return true
     }
 
