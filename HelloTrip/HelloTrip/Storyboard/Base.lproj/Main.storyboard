@@ -354,7 +354,7 @@
         <!--갤러리-->
         <scene sceneID="WYk-BY-RgH">
             <objects>
-                <viewController id="b73-jq-lUa" customClass="DiaryAddController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b73-jq-lUa" customClass="GalleryViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FZx-N2-uvN" customClass="DiaryAdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
