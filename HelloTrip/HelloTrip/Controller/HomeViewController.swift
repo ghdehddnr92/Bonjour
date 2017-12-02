@@ -23,6 +23,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         tableView.dataSource = self
 
         let btnMenu = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(btnMenuAction))
+       
         btnMenu.tintColor=UIColor(red: 54/255, green: 55/255, blue: 56/255, alpha: 1.0)
         self.navigationItem.leftBarButtonItem = btnMenu
 
@@ -39,6 +40,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         blackScreen.layer.zPosition=99
         let tapGestRecognizer = UITapGestureRecognizer(target: self, action: #selector(blackScreenTapAction(sender:)))
         blackScreen.addGestureRecognizer(tapGestRecognizer)
+        
         // Set up a cool background image for demo purposes
         let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor

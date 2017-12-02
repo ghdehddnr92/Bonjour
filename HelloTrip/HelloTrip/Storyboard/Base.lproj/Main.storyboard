@@ -98,6 +98,9 @@
                                 <segue destination="51K-Xc-yxA" kind="show" id="dva-Z3-ZiO"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mQa-iN-gq8">
+                            <color key="tintColor" red="0.047118395566940308" green="0.1185193732380867" blue="0.057432539761066437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="floatbutton" destination="zv4-xf-j5M" id="h75-MO-QWD"/>
