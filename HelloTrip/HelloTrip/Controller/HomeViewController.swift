@@ -17,8 +17,11 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     @IBOutlet var tableView: UITableView!
     var sidebarView: SidebarView!
     var blackScreen: UIView!
+   
     @IBOutlet weak var searchBar: UISearchBar!
     var isSearchClicked:Bool = true
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,15 +57,29 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor
         
         //Search Bar
-        searchBar.placeholder = "여행 찾기"
+      //  setupSearchController()
+        
     }
+    func setupSearchController() {
+        definesPresentationContext = true
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.isHidden = true
+        searchController.searchBar.barTintColor = UIColor(white: 0.9, alpha: 0.9)
+        searchController.searchBar.placeholder = "Search by movie name or genre"
+        searchController.hidesNavigationBarDuringPresentation = false
+     
+    }
+    
     @objc func rightButtonAction(){
         if(isSearchClicked == true){ //서치바가 있을 때
+            //searchController.searchBar.isHidden = false
             searchBar.isHidden = false
             backgroundBlack.isHidden = false
             isSearchClicked = false
         }
         else{ //서치바가 없을때
+           // searchController.searchBar.isHidden = true
             searchBar.isHidden = true
             backgroundBlack.isHidden = true
             isSearchClicked = true
@@ -99,8 +116,15 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
           let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
         return cell
     }
+    
 }
-
+extension HomeViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        if let term = searchController.searchBar.text {
+        //    filterRowsForSearchedText(term)
+        }
+    }
+}
 extension HomeViewController: SidebarViewDelegate {
     func sidebarDidSelectRow(row: Row) {
         blackScreen.isHidden=true
