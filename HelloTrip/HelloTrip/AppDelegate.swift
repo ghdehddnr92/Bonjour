@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import Photos
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,11 +18,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let photos = PHPhotoLibrary.authorizationStatus()
+        if photos == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({status in
+                if status == .authorized{
+                    self.gotoVC()
+                } else {
+                    let alert = UIAlertController(title: "Photos Access Denied", message: "App needs access to photos library.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+                }
+            })
+        } else if photos == .authorized {
+            gotoVC()
+        }
+        
+        return true
         GMSServices.provideAPIKey("AIzaSyCaoeHUjFkG-4YvNmh49EsgJN1cpAmHDzg")
         GMSPlacesClient.provideAPIKey("AIzaSyCaoeHUjFkG-4YvNmh49EsgJN1cpAmHDzg")
         return true
     }
 
+    func gotoVC() {
+        DispatchQueue.main.async(execute: { () -> Void in
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            if let window = self.window {
+                window.backgroundColor = UIColor.white
+                
+                let nav = UINavigationController()
+                let mainView = GalleryViewController()
+                nav.viewControllers = [mainView]
+                window.rootViewController = nav
+                window.makeKeyAndVisible()
+            }
+        })
+    }
+
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

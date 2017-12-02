@@ -325,7 +325,7 @@
         <!--갤러리-->
         <scene sceneID="WYk-BY-RgH">
             <objects>
-                <viewController id="b73-jq-lUa" sceneMemberID="viewController">
+                <viewController id="b73-jq-lUa" customClass="GalleryViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FZx-N2-uvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,6 +337,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT1-DY-Uyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4202" y="-995"/>
+        </scene>
+        <!--카메라-->
+        <scene sceneID="HzH-Xh-bj3">
+            <objects>
+                <viewController id="V3r-OA-qkF" userLabel="카메라" customClass="CameraViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pvr-fn-5sm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DMt-uv-J4F">
+                                <rect key="frame" x="0.0" y="20" width="375" height="498"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoL-9P-0O2" userLabel="ok">
+                                <rect key="frame" x="164" y="526" width="46" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ok"/>
+                                <connections>
+                                    <action selector="takeApicture:" destination="V3r-OA-qkF" eventType="touchUpInside" id="ifk-vV-uAx"/>
+                                    <segue destination="EE8-hC-9cK" kind="show" identifier="takeApictureSeque" id="GGO-8d-oHX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mKY-cc-C32" firstAttribute="trailing" secondItem="DMt-uv-J4F" secondAttribute="trailing" id="VZ8-G6-xAt"/>
+                            <constraint firstItem="mKY-cc-C32" firstAttribute="bottom" secondItem="DMt-uv-J4F" secondAttribute="bottom" constant="100" id="Zue-kn-UxJ"/>
+                            <constraint firstItem="DMt-uv-J4F" firstAttribute="leading" secondItem="mKY-cc-C32" secondAttribute="leading" id="kbz-Ex-BS4"/>
+                            <constraint firstItem="DMt-uv-J4F" firstAttribute="top" secondItem="mKY-cc-C32" secondAttribute="top" id="zHV-Sk-mst"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mKY-cc-C32"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="bmU-FR-2Mr"/>
+                    <connections>
+                        <outlet property="take" destination="zoL-9P-0O2" id="EZP-tA-sQG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUE-o1-BZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4317.6000000000004" y="-78.710644677661179"/>
+        </scene>
+        <!--카메라 Preview-->
+        <scene sceneID="egh-HX-o7b">
+            <objects>
+                <viewController id="EE8-hC-9cK" userLabel="카메라 Preview" customClass="CameraPreviewViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8m-ET-poe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4M-BJ-4il">
+                                <rect key="frame" x="0.0" y="20" width="375" height="502"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-L2-8px">
+                                <rect key="frame" x="280" y="583" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="select"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw0-Cr-FOF">
+                                <rect key="frame" x="58" y="583" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R76-24-r2x" firstAttribute="trailing" secondItem="A4M-BJ-4il" secondAttribute="trailing" id="Jt8-TZ-OAQ"/>
+                            <constraint firstItem="A4M-BJ-4il" firstAttribute="top" secondItem="R76-24-r2x" secondAttribute="top" id="OPd-9d-Rd8"/>
+                            <constraint firstItem="R76-24-r2x" firstAttribute="bottom" secondItem="A4M-BJ-4il" secondAttribute="bottom" constant="145" id="YvP-Ue-q1s"/>
+                            <constraint firstItem="A4M-BJ-4il" firstAttribute="leading" secondItem="R76-24-r2x" secondAttribute="leading" id="zeW-HD-Y1i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R76-24-r2x"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2v-BP-qgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5124" y="-80"/>
         </scene>
         <!--동영상-->
         <scene sceneID="mDD-dL-h5e">
@@ -366,27 +441,12 @@
                     <connections>
                         <segue destination="k1n-tu-gWm" kind="relationship" relationship="viewControllers" id="NTX-oQ-tXL"/>
                         <segue destination="b73-jq-lUa" kind="relationship" relationship="viewControllers" id="eJR-gW-Alu"/>
-                        <segue destination="W8n-Yt-7vC" kind="relationship" relationship="viewControllers" id="keu-zM-Dxh"/>
+                        <segue destination="V3r-OA-qkF" kind="relationship" relationship="viewControllers" id="GrN-T9-zvH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwX-dQ-YsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3310" y="-77"/>
-        </scene>
-        <!--카메라-->
-        <scene sceneID="I4F-HV-WTJ">
-            <objects>
-                <tabBarController id="W8n-Yt-7vC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="카메라" id="Wap-9R-8Xk"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="80u-Yr-Xe4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VkP-GY-NhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2466" y="-995"/>
         </scene>
         <!--Diary Context Add View Controller-->
         <scene sceneID="aLO-6E-QuY">
