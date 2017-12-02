@@ -10,14 +10,15 @@ import UIKit
 import SideMenu
 
 class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
-    //@IBOutlet weak var backgroundBlack: UIImageView!
+   
     
+    @IBOutlet weak var backgroundBlack: UIImageView!
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
     var sidebarView: SidebarView!
     var blackScreen: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
-    var isSearchHidden:Bool = true
+    var isSearchClicked:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,19 +52,20 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         // Set up a cool background image for demo purposes
         let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor
+        
+        //Search Bar
+        searchBar.placeholder = "여행 찾기"
     }
     @objc func rightButtonAction(){
-        if(isSearchHidden == true){ //서치바가 없을때
+        if(isSearchClicked == true){ //서치바가 있을 때
             searchBar.isHidden = false
-            //backgroundBlack.isHidden = false
-            print("없음")
-            isSearchHidden = false
+            backgroundBlack.isHidden = false
+            isSearchClicked = false
         }
-        else{ //서치바가 있을때
+        else{ //서치바가 없을때
             searchBar.isHidden = true
-           // backgroundBlack.isHidden = true
-            print("있음")
-            isSearchHidden = true
+            backgroundBlack.isHidden = true
+            isSearchClicked = true
         }
     }
     @objc func btnMenuAction() {

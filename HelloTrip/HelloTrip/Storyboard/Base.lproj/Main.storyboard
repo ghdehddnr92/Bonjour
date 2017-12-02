@@ -83,10 +83,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-Hc-2Xz">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62855843321917804" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="IkV-Hc-2Xz" firstAttribute="leading" secondItem="UWI-L6-HNk" secondAttribute="leading" id="2Te-is-7cK"/>
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="top" secondItem="UWI-L6-HNk" secondAttribute="top" id="4Nf-1S-RjC"/>
+                            <constraint firstItem="IkV-Hc-2Xz" firstAttribute="trailing" secondItem="UWI-L6-HNk" secondAttribute="trailing" id="9uB-bG-tX6"/>
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="bottom" secondItem="UWI-L6-HNk" secondAttribute="bottom" id="Dws-y5-pIU"/>
                             <constraint firstAttribute="trailing" secondItem="zv4-xf-j5M" secondAttribute="trailing" constant="10" id="LXg-JV-Mgq"/>
                             <constraint firstItem="Tch-10-WMW" firstAttribute="trailing" secondItem="UWI-L6-HNk" secondAttribute="trailing" id="RYC-fz-iCh"/>
@@ -95,6 +101,8 @@
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="trailing" secondItem="UWI-L6-HNk" secondAttribute="trailing" id="pgY-tQ-2ZM"/>
                             <constraint firstItem="Tch-10-WMW" firstAttribute="leading" secondItem="UWI-L6-HNk" secondAttribute="leading" id="tZV-sx-17g"/>
                             <constraint firstItem="UWI-L6-HNk" firstAttribute="bottom" secondItem="zv4-xf-j5M" secondAttribute="bottom" constant="20" id="u5x-Xo-cG3"/>
+                            <constraint firstItem="IkV-Hc-2Xz" firstAttribute="top" secondItem="Tch-10-WMW" secondAttribute="bottom" id="uEA-tK-UDH"/>
+                            <constraint firstItem="UWI-L6-HNk" firstAttribute="bottom" secondItem="IkV-Hc-2Xz" secondAttribute="bottom" id="xbE-uP-jq8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UWI-L6-HNk"/>
                     </view>
@@ -110,6 +118,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundBlack" destination="IkV-Hc-2Xz" id="nwb-mK-Frl"/>
                         <outlet property="floatbutton" destination="zv4-xf-j5M" id="h75-MO-QWD"/>
                         <outlet property="searchBar" destination="Tch-10-WMW" id="Qmy-WA-hib"/>
                         <outlet property="tableView" destination="Wkn-Jd-MgS" id="NyD-Id-q0i"/>
