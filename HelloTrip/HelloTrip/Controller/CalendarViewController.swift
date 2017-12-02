@@ -37,20 +37,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         // Dispose of any resources that can be recreated.
     }
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        var startDate:Date? = nil
-        var endDate:Date? = nil
-//        for i in 0..<2 {
-//            if i == 0{
-//                startDate = date
-//                print("1\(startDate)")
-//            }
-//            else{
-//                endDate = date
-//                print("2\(endDate)")
-//            }
-//        }
-        showRange(between: startDate!, and: endDate!)
-        //print("did select date \(self.formatter.string(from: date))")
+
     }
     
     func showRange(between startDate: Date, and endDate: Date) {
