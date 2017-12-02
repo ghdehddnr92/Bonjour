@@ -10,20 +10,27 @@ import UIKit
 import SideMenu
 
 class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
-
+   
+    
+    @IBOutlet weak var backgroundBlack: UIImageView!
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
     var sidebarView: SidebarView!
     var blackScreen: UIView!
+   
+    @IBOutlet weak var searchBar: UISearchBar!
+    var isSearchClicked:Bool = true
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        // left Button Side bar
         let btnMenu = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(btnMenuAction))
-       
+
         btnMenu.tintColor=UIColor(red: 54/255, green: 55/255, blue: 56/255, alpha: 1.0)
         self.navigationItem.leftBarButtonItem = btnMenu
 
@@ -41,11 +48,43 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         let tapGestRecognizer = UITapGestureRecognizer(target: self, action: #selector(blackScreenTapAction(sender:)))
         blackScreen.addGestureRecognizer(tapGestRecognizer)
         
+        //Right Button Search
+        let searchBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "Search"), style: .plain, target: self, action: #selector(rightButtonAction))
+        self.navigationItem.rightBarButtonItem = searchBtn
+        
         // Set up a cool background image for demo purposes
         let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor
+        
+        //Search Bar
+      //  setupSearchController()
+        
+    }
+    func setupSearchController() {
+        definesPresentationContext = true
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.isHidden = true
+        searchController.searchBar.barTintColor = UIColor(white: 0.9, alpha: 0.9)
+        searchController.searchBar.placeholder = "Search by movie name or genre"
+        searchController.hidesNavigationBarDuringPresentation = false
+     
     }
     
+    @objc func rightButtonAction(){
+        if(isSearchClicked == true){ //서치바가 있을 때
+            //searchController.searchBar.isHidden = false
+            searchBar.isHidden = false
+            backgroundBlack.isHidden = false
+            isSearchClicked = false
+        }
+        else{ //서치바가 없을때
+           // searchController.searchBar.isHidden = true
+            searchBar.isHidden = true
+            backgroundBlack.isHidden = true
+            isSearchClicked = true
+        }
+    }
     @objc func btnMenuAction() {
         blackScreen.isHidden=false
         UIView.animate(withDuration: 0.3, animations: {
@@ -77,8 +116,15 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
           let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
         return cell
     }
+    
 }
-
+extension HomeViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        if let term = searchController.searchBar.text {
+        //    filterRowsForSearchedText(term)
+        }
+    }
+}
 extension HomeViewController: SidebarViewDelegate {
     func sidebarDidSelectRow(row: Row) {
         blackScreen.isHidden=true

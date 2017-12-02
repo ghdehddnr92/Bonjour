@@ -23,6 +23,7 @@
 		5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */; };
 		5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */; };
 		5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */; };
+		5BD1D0F81FD28D6000706D13 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F71FD28D6000706D13 /* Travel.swift */; };
 		5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */; };
 		5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D701FCEC8E400086634 /* DiaryAddController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		5BD1D0F71FD28D6000706D13 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Travel.swift; path = HelloTrip/Model/Travel.swift; sourceTree = SOURCE_ROOT; };
 		5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		5BD95D701FCEC8E400086634 /* DiaryAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddController.swift; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,8 +112,8 @@
 		2DA34DA41FBDE28100876BF5 /* HelloTrip */ = {
 			isa = PBXGroup;
 			children = (
+				5BD1D0F91FD2978800706D13 /* Model */,
 				5B58E3BD1FCA9998007EE943 /* Extensions */,
-				5B1030831FC7C3FB004B4C83 /* Model */,
 				5B1030821FC7C3C5004B4C83 /* View */,
 				2D3C12D61FC5897100F0D99B /* Controller */,
 				2D3C12D31FC5892A00F0D99B /* Storyboard */,
@@ -132,13 +134,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5B1030831FC7C3FB004B4C83 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5B4FC4181FC58DD800628D1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +149,14 @@
 				5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BD1D0F91FD2978800706D13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BD1D0F71FD28D6000706D13 /* Travel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8AEBA466C9705CE319E44199 /* Pods */ = {
@@ -316,6 +319,7 @@
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
+				5BD1D0F81FD28D6000706D13 /* Travel.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
 				5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */,
 				5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */,
