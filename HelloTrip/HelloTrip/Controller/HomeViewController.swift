@@ -21,9 +21,9 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        // left Button Side bar
         let btnMenu = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(btnMenuAction))
-       
+
         btnMenu.tintColor=UIColor(red: 54/255, green: 55/255, blue: 56/255, alpha: 1.0)
         self.navigationItem.leftBarButtonItem = btnMenu
 
@@ -41,11 +41,17 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         let tapGestRecognizer = UITapGestureRecognizer(target: self, action: #selector(blackScreenTapAction(sender:)))
         blackScreen.addGestureRecognizer(tapGestRecognizer)
         
+        //Right Button Search
+        let searchBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "Search"), style: .plain, target: self, action: #selector(rightButtonAction))
+        self.navigationItem.rightBarButtonItem = searchBtn
+        
         // Set up a cool background image for demo purposes
         let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor
     }
-    
+    @objc func rightButtonAction(){
+        
+    }
     @objc func btnMenuAction() {
         blackScreen.isHidden=false
         UIView.animate(withDuration: 0.3, animations: {
