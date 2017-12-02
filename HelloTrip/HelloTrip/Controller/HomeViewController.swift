@@ -10,11 +10,14 @@ import UIKit
 import SideMenu
 
 class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
-
+    //@IBOutlet weak var backgroundBlack: UIImageView!
+    
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
     var sidebarView: SidebarView!
     var blackScreen: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var isSearchHidden:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +53,18 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         SideMenuManager.default.menuAnimationBackgroundColor = newPinkColor
     }
     @objc func rightButtonAction(){
-        
+        if(isSearchHidden == true){ //서치바가 없을때
+            searchBar.isHidden = false
+            //backgroundBlack.isHidden = false
+            print("없음")
+            isSearchHidden = false
+        }
+        else{ //서치바가 있을때
+            searchBar.isHidden = true
+           // backgroundBlack.isHidden = true
+            print("있음")
+            isSearchHidden = true
+        }
     }
     @objc func btnMenuAction() {
         blackScreen.isHidden=false

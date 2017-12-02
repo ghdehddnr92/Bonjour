@@ -79,9 +79,8 @@
                                     <segue destination="I1H-HA-jHt" kind="show" id="FhH-ub-vIZ"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-10-WMW">
+                            <searchBar hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-10-WMW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -90,8 +89,11 @@
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="top" secondItem="UWI-L6-HNk" secondAttribute="top" id="4Nf-1S-RjC"/>
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="bottom" secondItem="UWI-L6-HNk" secondAttribute="bottom" id="Dws-y5-pIU"/>
                             <constraint firstAttribute="trailing" secondItem="zv4-xf-j5M" secondAttribute="trailing" constant="10" id="LXg-JV-Mgq"/>
+                            <constraint firstItem="Tch-10-WMW" firstAttribute="trailing" secondItem="UWI-L6-HNk" secondAttribute="trailing" id="RYC-fz-iCh"/>
+                            <constraint firstItem="Tch-10-WMW" firstAttribute="top" secondItem="UWI-L6-HNk" secondAttribute="top" id="bIe-Ud-X64"/>
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="leading" secondItem="UWI-L6-HNk" secondAttribute="leading" id="gVv-qh-n0r"/>
                             <constraint firstItem="Wkn-Jd-MgS" firstAttribute="trailing" secondItem="UWI-L6-HNk" secondAttribute="trailing" id="pgY-tQ-2ZM"/>
+                            <constraint firstItem="Tch-10-WMW" firstAttribute="leading" secondItem="UWI-L6-HNk" secondAttribute="leading" id="tZV-sx-17g"/>
                             <constraint firstItem="UWI-L6-HNk" firstAttribute="bottom" secondItem="zv4-xf-j5M" secondAttribute="bottom" constant="20" id="u5x-Xo-cG3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UWI-L6-HNk"/>
@@ -109,6 +111,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="floatbutton" destination="zv4-xf-j5M" id="h75-MO-QWD"/>
+                        <outlet property="searchBar" destination="Tch-10-WMW" id="Qmy-WA-hib"/>
                         <outlet property="tableView" destination="Wkn-Jd-MgS" id="NyD-Id-q0i"/>
                     </connections>
                 </viewController>
