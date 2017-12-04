@@ -17,6 +17,11 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter
     }()
+    
+    var dateStartFlag:Bool = true
+    var startDate:Date? = nil
+    var endDate:Date? = nil
+    var arrayDate:[Date] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         calendar.allowsMultipleSelection = true
@@ -27,9 +32,10 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         let newPinkColor = UIColor(red: 255, green: 192, blue: 203)
         calendar.appearance.headerTitleColor = newPinkColor
         calendar.appearance.weekdayTextColor = newPinkColor
-        calendar.appearance.selectionColor = newPinkColor
-      
+        //calendar.appearance.selectionColor = newPinkColor
+        
         // Do any additional setup after loading the view.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,10 +43,32 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         // Dispose of any resources that can be recreated.
     }
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-
+//        let normalizedStartDate = calendar.startOfDayForDate(fromDate)
+//        let normalizedEndDate = calendar.startOfDayForDate(toDate)
+//        var dates: NSMutableArray = []
+//        var currentDate = normalizedStartDate
+//        repeat {
+//            currentDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: currentDate, options: NSCalendarOptions.MatchNextTime)!
+//            dates.addObject(currentDate)
+//        } while !calendar.isDate(currentDate, inSameDayAsDate: normalizedEndDate)
+//        print(dates)
+        
+        //print(date+(3600*24)) //문제 해결 !!!!!
+        if dateStartFlag == true{
+            startDate = date
+            dateStartFlag = false
+        }
+        else{
+            endDate = date
+            dateStartFlag = true
+            showRange(startDate: startDate!, endDate: endDate!)
+            for i in 0 ..< arrayDate.count {
+                calendar.select(arrayDate[i])
+            }
+        }
     }
     
-    func showRange(between startDate: Date, and endDate: Date) {
+    func showRange(startDate: Date, endDate: Date) {
         // Make sure startDate is smaller, than endDate
         guard startDate < endDate else { return }
         
@@ -57,6 +85,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             // Print the current date
             print(currentDate)
             // Add one day at the time
+            arrayDate.append(currentDate)
             currentDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
         }
     }

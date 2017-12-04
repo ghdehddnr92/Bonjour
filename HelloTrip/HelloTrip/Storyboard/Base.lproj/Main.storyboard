@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-Jd-MgS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -73,18 +73,18 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-xf-j5M">
-                                <rect key="frame" x="290" y="572" width="75" height="75"/>
+                                <rect key="frame" x="290" y="523" width="75" height="75"/>
                                 <state key="normal" image="f button"/>
                                 <connections>
                                     <segue destination="I1H-HA-jHt" kind="show" id="FhH-ub-vIZ"/>
                                 </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-Hc-2Xz">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62855843321917804" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <searchBar hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Uxk-B1-Toy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Pya-co-j8i" id="NgA-Yt-xW7"/>
@@ -183,7 +183,7 @@
             <objects>
                 <navigationController id="51K-Xc-yxA" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZGu-0h-Pjt">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -206,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-oG-t5G" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="I1H-HA-jHt" id="IKp-cX-mph"/>
@@ -255,7 +255,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ecr-hU-Pll">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="470" id="Msm-s1-HDW" customClass="DiaryTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -433,7 +433,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HG2-Jf-4LH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hmf-I5-0iG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -535,9 +535,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.59891369679999995" blue="0.98052730210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YwV-Dl-KL2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UC9-xU-WeH"/>
+                    <tabBarItem key="tabBarItem" title="" image="Calendar" id="UC9-xU-WeH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fos-qS-oUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -545,12 +546,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar" width="18" height="18"/>
         <image name="f button" width="75" height="75"/>
         <image name="large ticket" width="393" height="559"/>
         <image name="ticket" width="371" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8aX-KE-TjJ"/>
-        <segue reference="atI-SU-tNs"/>
+        <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>
