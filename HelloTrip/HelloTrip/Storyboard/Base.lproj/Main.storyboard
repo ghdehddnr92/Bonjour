@@ -183,7 +183,7 @@
             <objects>
                 <navigationController id="51K-Xc-yxA" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZGu-0h-Pjt">
-                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -233,11 +233,77 @@
                     </view>
                     <connections>
                         <outlet property="calendar" destination="GVG-oG-t5G" id="jGN-7r-SDU"/>
+                        <segue destination="EhX-UP-rD3" kind="presentation" identifier="countrySelectSegue" modalPresentationStyle="overCurrentContext" id="fyf-R9-gM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srB-RS-xdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="-649"/>
+            <point key="canvasLocation" x="1593" y="-699"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GMw-tw-rMY">
+            <objects>
+                <viewController id="EhX-UP-rD3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ili-H4-QrL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-YJ-yc3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mud-r6-Pht">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-XJ-8mI">
+                                <rect key="frame" x="30" y="77" width="315" height="514"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-NP-siv">
+                                        <rect key="frame" x="134" y="461" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="I1H-HA-jHt" kind="presentation" id="fti-S7-lLY"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-9Y-lnz">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="514"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.59891369679999995" blue="0.98052730210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZDH-NP-siv" firstAttribute="top" secondItem="EGx-9Y-lnz" secondAttribute="bottom" constant="461" id="3IE-Td-Q6U"/>
+                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="centerY" secondItem="p2s-XJ-8mI" secondAttribute="centerY" id="5Ot-Kj-9QC"/>
+                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="top" secondItem="p2s-XJ-8mI" secondAttribute="top" id="BFF-hZ-Cyp"/>
+                                    <constraint firstAttribute="trailing" secondItem="EGx-9Y-lnz" secondAttribute="trailing" id="Dgv-3Q-xfW"/>
+                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="leading" secondItem="p2s-XJ-8mI" secondAttribute="leading" id="JpF-f1-kEy"/>
+                                    <constraint firstItem="ZDH-NP-siv" firstAttribute="centerX" secondItem="EGx-9Y-lnz" secondAttribute="centerX" id="dzG-CX-BFQ"/>
+                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="centerX" secondItem="p2s-XJ-8mI" secondAttribute="centerX" id="zgr-sh-CtR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="centerY" secondItem="EEo-YJ-yc3" secondAttribute="centerY" id="0F0-hD-YbK"/>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="leading" secondItem="vh9-U1-55V" secondAttribute="leading" constant="30" id="6cV-m3-c3q"/>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="centerY" secondItem="Ili-H4-QrL" secondAttribute="centerY" id="FE5-6B-2Cn"/>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="centerY" secondItem="Ili-H4-QrL" secondAttribute="centerY" id="MSG-9X-iIU"/>
+                            <constraint firstAttribute="trailing" secondItem="EEo-YJ-yc3" secondAttribute="trailing" id="N5c-u5-N98"/>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="centerX" secondItem="Ili-H4-QrL" secondAttribute="centerX" id="Nz4-Af-UaX"/>
+                            <constraint firstItem="vh9-U1-55V" firstAttribute="trailing" secondItem="p2s-XJ-8mI" secondAttribute="trailing" constant="30" id="W7o-qw-yxL" userLabel="Safe Area.trailing = View.trailing "/>
+                            <constraint firstItem="EEo-YJ-yc3" firstAttribute="leading" secondItem="Ili-H4-QrL" secondAttribute="leading" id="cea-sM-Bte" userLabel="Visual Effect View.leading = leading"/>
+                            <constraint firstItem="EEo-YJ-yc3" firstAttribute="bottom" secondItem="vh9-U1-55V" secondAttribute="bottom" id="ixm-wp-VXX"/>
+                            <constraint firstItem="p2s-XJ-8mI" firstAttribute="top" secondItem="vh9-U1-55V" secondAttribute="top" constant="57" id="wG9-Ou-cFA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vh9-U1-55V"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhR-F6-Vzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618" y="224"/>
         </scene>
         <!--Diary View Controller-->
         <scene sceneID="8Jr-D9-vpj">
@@ -433,7 +499,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HG2-Jf-4LH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hmf-I5-0iG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -553,6 +619,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8aX-KE-TjJ"/>
+        <segue reference="fti-S7-lLY"/>
         <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>

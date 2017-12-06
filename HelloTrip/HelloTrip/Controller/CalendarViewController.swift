@@ -18,6 +18,8 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         return formatter
     }()
     
+    @IBOutlet weak var countryView: UIView!
+    
     var dateStartFlag:Bool = true
     var startDate:Date? = nil
     var endDate:Date? = nil
@@ -61,14 +63,14 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         else{
             endDate = date
             dateStartFlag = true
-            showRange(startDate: startDate!, endDate: endDate!)
+            selectTripTimeRange(startDate: startDate!, endDate: endDate!)
             for i in 0 ..< arrayDate.count {
                 calendar.select(arrayDate[i])
             }
         }
     }
     
-    func showRange(startDate: Date, endDate: Date) {
+    func selectTripTimeRange(startDate: Date, endDate: Date) {
         // Make sure startDate is smaller, than endDate
         guard startDate < endDate else { return }
         
@@ -88,7 +90,16 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             arrayDate.append(currentDate)
             currentDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
         }
+        
+        // 국가 선택 함수 호출
+        selectTripCountry(startDate: startDate, endDate: endDate)
     }
+    
+    func selectTripCountry(startDate:Date, endDate:Date){
+        self.performSegue(withIdentifier: "countrySelectSegue", sender: self)
+        
+    }
+    
     /*
      // MARK: - Navigation
      
