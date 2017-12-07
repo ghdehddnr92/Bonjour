@@ -6,12 +6,13 @@
 //  Copyright © 2017년 SSU. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
-    
+    var Trip: DiaryMO!
     override func viewDidLoad() {
         super.viewDidLoad()
         

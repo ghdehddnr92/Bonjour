@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06C5A70BE093CDD16A84416F /* Pods_HelloTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */; };
+		2D1A4CFC1FD7E30E00F0DFCC /* HelloTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A4CFA1FD7E30E00F0DFCC /* HelloTrip.xcdatamodeld */; };
 		2D7476A81FD2719600E3207E /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7476A71FD2719600E3207E /* GalleryViewController.swift */; };
 		2D7476AA1FD2758200E3207E /* ImagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7476A91FD2758200E3207E /* ImagePreviewVC.swift */; };
 		2D7476AC1FD27CC100E3207E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7476AB1FD27CC100E3207E /* CameraViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D1A4CFB1FD7E30E00F0DFCC /* HelloTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloTrip.xcdatamodel; sourceTree = "<group>"; };
 		2D7476A71FD2719600E3207E /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		2D7476A91FD2758200E3207E /* ImagePreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewVC.swift; sourceTree = "<group>"; };
 		2D7476AB1FD27CC100E3207E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				2D3C12D31FC5892A00F0D99B /* Storyboard */,
 				2DA34DA51FBDE28100876BF5 /* AppDelegate.swift */,
 				2DA34DAC1FBDE28100876BF5 /* Assets.xcassets */,
+				2D1A4CFA1FD7E30E00F0DFCC /* HelloTrip.xcdatamodeld */,
 				2DA34DB11FBDE28100876BF5 /* Info.plist */,
 			);
 			path = HelloTrip;
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7476A81FD2719600E3207E /* GalleryViewController.swift in Sources */,
+				2D1A4CFC1FD7E30E00F0DFCC /* HelloTrip.xcdatamodeld in Sources */,
 				5BD1D0FB1FD2AA2800706D13 /* GalleryCollectionViewCell.swift in Sources */,
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */,
@@ -522,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D1A4CFA1FD7E30E00F0DFCC /* HelloTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D1A4CFB1FD7E30E00F0DFCC /* HelloTrip.xcdatamodel */,
+			);
+			currentVersion = 2D1A4CFB1FD7E30E00F0DFCC /* HelloTrip.xcdatamodel */;
+			path = HelloTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2DA34D9A1FBDE28100876BF5 /* Project object */;
 }

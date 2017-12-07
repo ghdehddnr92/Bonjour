@@ -8,11 +8,13 @@
 
 import UIKit
 import SideMenu
+import CoreData
 
 class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet var floatbutton: UIButton!
     @IBOutlet var tableView: UITableView!
+    var Travel: HomeMO!
 
     override func viewDidLoad() {
         super.viewDidLoad()

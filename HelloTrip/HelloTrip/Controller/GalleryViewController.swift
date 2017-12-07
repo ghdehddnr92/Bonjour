@@ -5,7 +5,7 @@
 //  Created by 가민경 on 2017. 12. 2..
 //  Copyright © 2017년 SSU. All rights reserved.
 //
-
+/*
 import UIKit
 import Photos
 
@@ -19,17 +19,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let layout = UICollectionViewFlowLayout()
-        
-        myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        myCollectionView.delegate=self
-        myCollectionView.dataSource=self
-        myCollectionView.register(GalleryCollectionViewCell.self, forCellWithReuseIdentifier: "PhotoCell")
-        myCollectionView.backgroundColor=UIColor.white
-        self.view.addSubview(myCollectionView)
-        
-        myCollectionView.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleWidth.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue)))
-        
         grabPhotos()
     }
     
@@ -85,7 +74,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         imageArray = []
         
         DispatchQueue.global(qos: .background).async {
-            print("This is run on the background queue")
             let imgManager=PHImageManager.default()
             
             let requestOptions=PHImageRequestOptions()
@@ -110,7 +98,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             print("imageArray count: \(self.imageArray.count)")
             
             DispatchQueue.main.async {
-                print("This is run on the main queue, after the previous code in outer block")
                 self.myCollectionView.reloadData()
             }
         }
@@ -155,3 +142,4 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
 }
+*/

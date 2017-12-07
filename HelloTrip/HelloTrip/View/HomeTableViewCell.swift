@@ -13,6 +13,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet var datelabel : UILabel!
     @IBOutlet var subjectlabel : UILabel!
 
+    var travel:[HomeMO] = []
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

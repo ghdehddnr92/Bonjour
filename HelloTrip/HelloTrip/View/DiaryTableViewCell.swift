@@ -15,6 +15,8 @@ class DiaryTableViewCell: UITableViewCell {
     @IBOutlet var citylabel : UILabel!
     @IBOutlet var textlabel : UILabel!
     
+    var Trip:[DiaryMO] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
