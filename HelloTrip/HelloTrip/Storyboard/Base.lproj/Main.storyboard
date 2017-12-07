@@ -259,8 +259,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-XJ-8mI">
                                 <rect key="frame" x="30" y="77" width="315" height="514"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-NP-siv">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-NP-siv">
                                         <rect key="frame" x="134" y="461" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -268,21 +269,9 @@
                                             <segue destination="I1H-HA-jHt" kind="presentation" id="fti-S7-lLY"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-9Y-lnz">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="514"/>
-                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.59891369679999995" blue="0.98052730210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="ZDH-NP-siv" firstAttribute="top" secondItem="EGx-9Y-lnz" secondAttribute="bottom" constant="461" id="3IE-Td-Q6U"/>
-                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="centerY" secondItem="p2s-XJ-8mI" secondAttribute="centerY" id="5Ot-Kj-9QC"/>
-                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="top" secondItem="p2s-XJ-8mI" secondAttribute="top" id="BFF-hZ-Cyp"/>
-                                    <constraint firstAttribute="trailing" secondItem="EGx-9Y-lnz" secondAttribute="trailing" id="Dgv-3Q-xfW"/>
-                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="leading" secondItem="p2s-XJ-8mI" secondAttribute="leading" id="JpF-f1-kEy"/>
-                                    <constraint firstItem="ZDH-NP-siv" firstAttribute="centerX" secondItem="EGx-9Y-lnz" secondAttribute="centerX" id="dzG-CX-BFQ"/>
-                                    <constraint firstItem="EGx-9Y-lnz" firstAttribute="centerX" secondItem="p2s-XJ-8mI" secondAttribute="centerX" id="zgr-sh-CtR"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
