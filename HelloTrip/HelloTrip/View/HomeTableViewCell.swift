@@ -10,9 +10,10 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet var Thumbnailimage : UIImageView!
-    @IBOutlet var datelabel : UILabel!
-    @IBOutlet var subjectlabel : UILabel!
-
+ 
+    @IBOutlet weak var tripNameLabel: UILabel!
+    
+    @IBOutlet weak var tripTimeLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
