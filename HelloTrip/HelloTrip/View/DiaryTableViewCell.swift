@@ -11,9 +11,9 @@ import UIKit
 class DiaryTableViewCell: UITableViewCell {
 
     @IBOutlet var Thumbnailimage : UIImageView!
-    @IBOutlet var datelabel : UILabel!
-    @IBOutlet var citylabel : UILabel!
-    @IBOutlet var textlabel : UILabel!
+    @IBOutlet var dateLabel : UILabel!
+    @IBOutlet var countryLabel : UILabel!
+    @IBOutlet var contentLabel : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

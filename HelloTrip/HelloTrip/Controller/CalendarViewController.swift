@@ -37,7 +37,6 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         //calendar.appearance.selectionColor = newPinkColor
         
         // Do any additional setup after loading the view.
-        
     }
     
     override func didReceiveMemoryWarning() {

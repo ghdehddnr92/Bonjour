@@ -16,6 +16,7 @@
 		5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */; };
 		5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */; };
 		5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */; };
+		5B2749821FDA71DA00DD90EA /* HelloTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B2749801FDA71DA00DD90EA /* HelloTrip.xcdatamodeld */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
@@ -27,6 +28,8 @@
 		5BD1D0F81FD28D6000706D13 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F71FD28D6000706D13 /* Travel.swift */; };
 		5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */; };
 		5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D701FCEC8E400086634 /* DiaryAddController.swift */; };
+		5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */; };
+		5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF242A91FE500A800E1066E /* DialogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,7 @@
 		5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
 		5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5B2749811FDA71DA00DD90EA /* HelloTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloTrip.xcdatamodel; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		5BD1D0F71FD28D6000706D13 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = SOURCE_ROOT; };
 		5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		5BD95D701FCEC8E400086634 /* DiaryAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddController.swift; sourceTree = "<group>"; };
+		5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTableViewCell.swift; sourceTree = "<group>"; };
+		5BF242A91FE500A800E1066E /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		72F6C9B923C91E8E49A0B4DD /* Pods_HelloTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79392BC564B2C598F521D9 /* Pods-HelloTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.release.xcconfig"; sourceTree = "<group>"; };
 		F075718A9D60230366C94C62 /* Pods-HelloTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTrip/Pods-HelloTrip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 				5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */,
 				5BD95D701FCEC8E400086634 /* DiaryAddController.swift */,
 				5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */,
+				5BF242A91FE500A800E1066E /* DialogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 				2DA34DA51FBDE28100876BF5 /* AppDelegate.swift */,
 				2DA34DAC1FBDE28100876BF5 /* Assets.xcassets */,
 				2DA34DB11FBDE28100876BF5 /* Info.plist */,
+				5B2749801FDA71DA00DD90EA /* HelloTrip.xcdatamodeld */,
 			);
 			path = HelloTrip;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 				5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */,
 				5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */,
 				5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */,
+				5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
+				5B2749821FDA71DA00DD90EA /* HelloTrip.xcdatamodeld in Sources */,
 				5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */,
 				5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
@@ -328,7 +338,9 @@
 				5BC48E5B1FD9206200E6C2B9 /* FlagCollectionViewCell.swift in Sources */,
 				5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
+				5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */,
 				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
+				5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B2749801FDA71DA00DD90EA /* HelloTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B2749811FDA71DA00DD90EA /* HelloTrip.xcdatamodel */,
+			);
+			currentVersion = 5B2749811FDA71DA00DD90EA /* HelloTrip.xcdatamodel */;
+			path = HelloTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2DA34D9A1FBDE28100876BF5 /* Project object */;
 }
