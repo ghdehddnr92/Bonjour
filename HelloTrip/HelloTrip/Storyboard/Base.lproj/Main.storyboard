@@ -313,15 +313,15 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-mf-IOX">
                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="80.5"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="wLh-VF-IwE">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wLh-VF-IwE">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="Y0k-Vq-xD5"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="Y0k-Vq-xD5"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="iwY-jo-Uav"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-WJ-rXi">
-                                                                            <rect key="frame" x="0.0" y="60" width="60" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="40" width="60" height="40.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -331,15 +331,15 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-ca-3ue">
                                                                     <rect key="frame" x="70" y="0.0" width="60" height="80.5"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Credit-Card" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-hL-wsV">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Credit-Card" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-hL-wsV">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="CPT-it-Ff1"/>
-                                                                                <constraint firstAttribute="height" constant="60" id="lT8-y4-Vh8"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="lT8-y4-Vh8"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-1a-nfC">
-                                                                            <rect key="frame" x="0.0" y="60" width="60" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="40" width="60" height="40.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -349,15 +349,15 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-jG-nDl">
                                                                     <rect key="frame" x="140" y="0.0" width="60" height="80.5"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edit" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-xm-3OJ">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edit" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-xm-3OJ">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="gcs-zL-OS2"/>
-                                                                                <constraint firstAttribute="height" constant="60" id="s2S-vU-3SW"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="s2S-vU-3SW"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-m2-U3Z">
-                                                                            <rect key="frame" x="0.0" y="60" width="60" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="40" width="60" height="40.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -367,15 +367,15 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="68u-2R-0cP">
                                                                     <rect key="frame" x="210" y="0.0" width="60" height="80.5"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1n-av-Yzk">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1n-av-Yzk">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="WQN-lN-the"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="WQN-lN-the"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="eIf-qd-zP4"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ8-kR-esw">
-                                                                            <rect key="frame" x="0.0" y="60" width="60" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="40" width="60" height="40.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
