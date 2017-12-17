@@ -24,6 +24,10 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     var startDate:Date? = nil
     var endDate:Date? = nil
     var arrayDate:[Date] = []
+    
+    //선택된 국가의 배열의 Index
+    var selectCountryIndex:Int? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         calendar.allowsMultipleSelection = true
@@ -96,17 +100,10 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     func selectTripCountry(startDate:Date, endDate:Date){
         self.performSegue(withIdentifier: "countrySelectSegue", sender: self)
-        
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+        let day: Int! = self.gregorian.component(.day, from: date)
+        return [13,24].contains(day) ? UIImage(named: "us") : nil
+    }
 }

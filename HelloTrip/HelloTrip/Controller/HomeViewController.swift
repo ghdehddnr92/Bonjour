@@ -47,6 +47,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
      //   FlagCollectionView.delegate = self
      //   FlagCollectionView.dataSource = self
+        
         // left Button Side bar
         let btnMenu = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(btnMenuAction))
 
@@ -56,6 +57,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         sidebarView=SidebarView(frame: CGRect(x: 0, y: 0, width: 0, height: self.view.frame.height))
         sidebarView.delegate=self
         sidebarView.layer.zPosition=100
+        
         self.view.isUserInteractionEnabled=true
         self.navigationController?.view.addSubview(sidebarView)
 
@@ -96,24 +98,6 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         }
         
     }
-    
-//        //Right Button Search
-//        let searchBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "Search"), style: .plain, target: self, action: #selector(rightButtonAction))
-//        self.navigationItem.rightBarButtonItem = searchBtn
-//    @objc func rightButtonAction(){
-//        if(isSearchClicked == true){ //서치바가 있을 때
-//            searchController.searchBar.isHidden = false
-//            //searchBar.isHidden = false
-//            backgroundBlack.isHidden = false
-//            isSearchClicked = false
-//        }
-//        else{ //서치바가 없을때
-//            searchController.searchBar.isHidden = true
-//            //searchBar.isHidden = true
-//            backgroundBlack.isHidden = true
-//            isSearchClicked = true
-//        }
-//    }
     
     @objc func btnMenuAction() {
         blackScreen.isHidden=false

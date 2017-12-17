@@ -79,7 +79,6 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
-        sender.view?.isHidden = true
        
         print("[\(indexPath.row),2] + \(indexPath.row*4 + 1)")
     }
@@ -104,7 +103,7 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         
         print("[\(indexPath.row),4] + \(indexPath.row*4 + 3)")
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        

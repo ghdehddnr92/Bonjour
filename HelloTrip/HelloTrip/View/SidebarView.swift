@@ -48,7 +48,7 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.backgroundColor=UIColor(red: 199/255, green: 55/255, blue: 56/255, alpha: 1.0)
         self.clipsToBounds=true
         
-        titleArr = ["도랏", "Messages", "Contact", "Settings", "History", "Help", "Sign Out"]
+        titleArr = ["여행 국가", "Messages", "Contact", "Settings", "History", "Help", "Sign Out"]
         
         setupViews()
         
