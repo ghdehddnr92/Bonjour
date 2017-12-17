@@ -17,6 +17,9 @@
 		5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */; };
 		5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */; };
 		5B2749821FDA71DA00DD90EA /* HelloTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B2749801FDA71DA00DD90EA /* HelloTrip.xcdatamodeld */; };
+		5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02561FE6C10500665A2C /* CameraViewController.swift */; };
+		5B2E02591FE6C15F00665A2C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02581FE6C15F00665A2C /* VideoViewController.swift */; };
+		5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
@@ -44,6 +47,9 @@
 		5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
 		5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5B2749811FDA71DA00DD90EA /* HelloTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloTrip.xcdatamodel; sourceTree = "<group>"; };
+		5B2E02561FE6C10500665A2C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5B2E02581FE6C15F00665A2C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 				5BD95D701FCEC8E400086634 /* DiaryAddController.swift */,
 				5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */,
 				5BF242A91FE500A800E1066E /* DialogViewController.swift */,
+				5B2E02561FE6C10500665A2C /* CameraViewController.swift */,
+				5B2E02581FE6C15F00665A2C /* VideoViewController.swift */,
+				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,7 +349,10 @@
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
 				5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */,
 				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
+				5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */,
 				5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */,
+				5B2E02591FE6C15F00665A2C /* VideoViewController.swift in Sources */,
+				5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

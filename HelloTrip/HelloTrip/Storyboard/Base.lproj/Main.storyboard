@@ -566,20 +566,10 @@
         <!--갤러리-->
         <scene sceneID="WYk-BY-RgH">
             <objects>
-                <viewController id="b73-jq-lUa" customClass="GalleryViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b73-jq-lUa" customClass="PhotoGalleryViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FZx-N2-uvN" customClass="DiaryAdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6y-4q-mC3">
-                                <rect key="frame" x="98" y="75" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="openGallery:" destination="b73-jq-lUa" eventType="touchUpInside" id="c5x-L5-916"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yFG-3d-dlD"/>
                     </view>
@@ -592,7 +582,7 @@
         <!--동영상-->
         <scene sceneID="mDD-dL-h5e">
             <objects>
-                <viewController id="k1n-tu-gWm" sceneMemberID="viewController">
+                <viewController id="k1n-tu-gWm" customClass="VideoViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OzD-Yh-qlI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -603,7 +593,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2TM-Yn-5id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="-995"/>
+            <point key="canvasLocation" x="3382" y="-995"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w6f-Zz-oOb">
@@ -617,7 +607,7 @@
                     <connections>
                         <segue destination="k1n-tu-gWm" kind="relationship" relationship="viewControllers" id="NTX-oQ-tXL"/>
                         <segue destination="b73-jq-lUa" kind="relationship" relationship="viewControllers" id="eJR-gW-Alu"/>
-                        <segue destination="W8n-Yt-7vC" kind="relationship" relationship="viewControllers" id="keu-zM-Dxh"/>
+                        <segue destination="AyN-YN-u7Y" kind="relationship" relationship="viewControllers" id="hiR-Pu-MAB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwX-dQ-YsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,19 +615,20 @@
             <point key="canvasLocation" x="3310" y="-77"/>
         </scene>
         <!--카메라-->
-        <scene sceneID="I4F-HV-WTJ">
+        <scene sceneID="GjQ-7S-IIa">
             <objects>
-                <tabBarController id="W8n-Yt-7vC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="카메라" id="Wap-9R-8Xk"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="80u-Yr-Xe4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VkP-GY-NhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="카메라" id="AyN-YN-u7Y" customClass="CameraViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KmW-wl-PI1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zwh-81-Reu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="카메라" id="5Es-NW-Euy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsY-5U-bnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2466" y="-995"/>
+            <point key="canvasLocation" x="2481" y="-995"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bav-9M-Loz">
