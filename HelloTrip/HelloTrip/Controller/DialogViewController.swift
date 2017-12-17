@@ -66,6 +66,7 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
+        tappedView.tintColor = UIColor.black
         self.clickedImageIndex = indexPath.row*4 + 0
         
         print("[\(indexPath.row),1] + \(indexPath.row*4 + 0)")
@@ -78,6 +79,8 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
+        sender.view?.isHidden = true
+       
         print("[\(indexPath.row),2] + \(indexPath.row*4 + 1)")
     }
     @objc func imgTapped3(sender: UITapGestureRecognizer){

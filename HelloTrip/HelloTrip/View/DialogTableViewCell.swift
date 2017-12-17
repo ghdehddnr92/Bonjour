@@ -10,6 +10,7 @@ import UIKit
 
 class DialogTableViewCell: UITableViewCell {
 
+
     @IBOutlet weak var countryImage1: UIImageView!
     @IBOutlet weak var countryLabel1: UILabel!
     
