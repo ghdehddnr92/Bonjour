@@ -204,7 +204,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-oG-t5G" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="581"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="I1H-HA-jHt" id="IKp-cX-mph"/>
@@ -212,42 +212,28 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-8j-HWZ">
-                                <rect key="frame" x="313" y="83" width="46" height="19"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="19" id="4d9-Ou-A0S"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="141" y="625" width="92" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="선택 완료"/>
                                 <connections>
                                     <segue destination="Lnx-gk-pJS" kind="show" id="gA5-NR-d7m"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8et-d8-P8f">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="Ra6-rW-b46">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="czl-Ka-7BA"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="tZc-Ax-M7o"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J0g-8j-HWZ" firstAttribute="trailing" secondItem="SGU-Bq-UoM" secondAttribute="trailingMargin" id="693-7e-6NH"/>
                             <constraint firstItem="GVG-oG-t5G" firstAttribute="trailing" secondItem="X7h-rX-Q5Z" secondAttribute="trailing" id="7MP-Ss-hyg"/>
-                            <constraint firstItem="8et-d8-P8f" firstAttribute="leading" secondItem="GVG-oG-t5G" secondAttribute="leading" id="A5I-TP-LnD"/>
-                            <constraint firstItem="GVG-oG-t5G" firstAttribute="bottom" secondItem="X7h-rX-Q5Z" secondAttribute="bottom" id="Mc5-Sh-GUe"/>
-                            <constraint firstItem="GVG-oG-t5G" firstAttribute="top" secondItem="8et-d8-P8f" secondAttribute="bottom" id="OtV-ZY-G0o"/>
-                            <constraint firstItem="8et-d8-P8f" firstAttribute="trailing" secondItem="GVG-oG-t5G" secondAttribute="trailing" id="P8b-Ob-D49"/>
-                            <constraint firstItem="J0g-8j-HWZ" firstAttribute="top" secondItem="8et-d8-P8f" secondAttribute="bottom" constant="39" id="Xt7-bz-5lD"/>
-                            <constraint firstItem="8et-d8-P8f" firstAttribute="top" secondItem="SGU-Bq-UoM" secondAttribute="top" id="d5T-b4-01S"/>
+                            <constraint firstItem="GVG-oG-t5G" firstAttribute="bottom" secondItem="J0g-8j-HWZ" secondAttribute="top" id="PxP-lr-FJz"/>
+                            <constraint firstItem="GVG-oG-t5G" firstAttribute="top" secondItem="SGU-Bq-UoM" secondAttribute="topMargin" constant="-20" id="UmF-mM-jUY"/>
+                            <constraint firstItem="J0g-8j-HWZ" firstAttribute="bottom" secondItem="X7h-rX-Q5Z" secondAttribute="bottom" id="XP3-2C-qe5"/>
+                            <constraint firstItem="J0g-8j-HWZ" firstAttribute="centerX" secondItem="SGU-Bq-UoM" secondAttribute="centerX" id="ZuH-oL-INz"/>
                             <constraint firstItem="GVG-oG-t5G" firstAttribute="leading" secondItem="X7h-rX-Q5Z" secondAttribute="leading" id="x9d-Gr-2p6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X7h-rX-Q5Z"/>
                     </view>
                     <connections>
                         <outlet property="calendar" destination="GVG-oG-t5G" id="jGN-7r-SDU"/>
-                        <segue destination="EhX-UP-rD3" kind="presentation" identifier="countrySelectSegue" modalPresentationStyle="overCurrentContext" id="fyf-R9-gM1"/>
+                        <segue destination="EhX-UP-rD3" kind="show" identifier="countrySelectSegue" id="fyf-R9-gM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srB-RS-xdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,10 +257,10 @@
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-XJ-8mI">
-                                <rect key="frame" x="30" y="77" width="315" height="514"/>
+                                <rect key="frame" x="30" y="121" width="315" height="426"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-NP-siv">
-                                        <rect key="frame" x="245" y="464" width="30" height="30"/>
+                                        <rect key="frame" x="245" y="376" width="30" height="30"/>
                                         <state key="normal" title="Ok">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -283,7 +269,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeW-UA-UwP">
-                                        <rect key="frame" x="40" y="464" width="48" height="30"/>
+                                        <rect key="frame" x="40" y="376" width="48" height="30"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -295,7 +281,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qQv-h4-liO">
-                                        <rect key="frame" x="8" y="49" width="299" height="407"/>
+                                        <rect key="frame" x="8" y="49" width="299" height="319"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="sectionIndexBackgroundColor" red="1" green="0.59891369679999995" blue="0.98052730210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -968,7 +954,7 @@ AAAAAAAAKag
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gA5-NR-d7m"/>
-        <segue reference="fti-S7-lLY"/>
+        <segue reference="FhH-ub-vIZ"/>
         <segue reference="atI-SU-tNs"/>
     </inferredMetricsTieBreakers>
 </document>
