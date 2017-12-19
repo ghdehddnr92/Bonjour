@@ -10,6 +10,9 @@ import UIKit
 import FSCalendar
 
 class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+
+    let flags : [String] = MyData.Container.flags
+    
     @IBOutlet weak var calendar: FSCalendar!
     fileprivate let gregorian = Calendar(identifier: .gregorian)
     fileprivate let formatter: DateFormatter = {
@@ -26,6 +29,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     var arrayDate:[Date] = []
     
     var _selectCountryIndex: Int = -1
+    var setCalendarImageFlag:Bool = false
     
     //선택된 국가의 배열의 Index
     var selectCountryIndex: Int{
@@ -50,7 +54,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         calendar.appearance.headerTitleColor = newPinkColor
         calendar.appearance.weekdayTextColor = newPinkColor
         //calendar.appearance.selectionColor = newPinkColor
-        
+
         print("값 : \(selectCountryIndex)")
         // Do any additional setup after loading the view.
     }
@@ -59,7 +63,9 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+
         //print(date+(3600*24)) //문제 해결 !!!!!
         if dateStartFlag == true{
             startDate = date
@@ -72,6 +78,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             for i in 0 ..< arrayDate.count {
                 calendar.select(arrayDate[i])
             }
+           
         }
     }
     
@@ -93,19 +100,28 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             print(currentDate)
             // Add one day at the time
             arrayDate.append(currentDate)
+            
             currentDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
         }
-        
+
         // 국가 선택 함수 호출
-        selectTripCountry(startDate: startDate, endDate: endDate)
+        selectTripCountry()
     }
     
-    func selectTripCountry(startDate:Date, endDate:Date){
+    func selectTripCountry(){
         self.performSegue(withIdentifier: "countrySelectSegue", sender: self)
     }
-    
-    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
-        let day: Int! = self.gregorian.component(.day, from: date)
-        return [13,24].contains(day) ? UIImage(named: "us") : nil
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "countrySelectSegue" {
+            let destinationController = segue.destination as! DialogViewController
+            
+            destinationController.arrayDate = arrayDate
+        }
+    }
+    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage?{
+        if selectCountryIndex != -1{
+            return arrayDate.contains(date) ? UIImage(named: flags[selectCountryIndex]) : nil
+        }
+        return nil
     }
 }

@@ -8,11 +8,15 @@
 
 import UIKit
 
+
 class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource{
+
+    let flags : [String] = MyData.Container.flags
     
-    let flags = ["ad","ae","af","ag","al","am","ao","ar","at","au","az","ba","bb","bd","be","bf","bg","bh","bi","bj","bn","bo","br","bs","bt","bw","by","bz","ca","cd","cf","cg","ch","ci","cl","cm","cn","co","cr","cu","cv","cy","cz","de","dj","dk","dm","do","dz","ec","ee","eg","eh","er","es","et","fi","fj","fm","fr","ga","gb","gd","ge","gh","gm","gn","gq","gr","gt","gw","gy","hn","hr","ht","hu","id","ie","il","in","iq","ir","is","it","jm","jo","jp","ke","kg","kh","ki","km","kn","kp","kr","ks","kw","kz","la","lb","lc","li","lk","lr","ls","lt","lu","lv","ly","ma","mc","md","me","mg","mh","mk","ml","mm","mn,","mr","mt","mu","mv","mw","mx","my","mz","na","ne","ng","ni","nl","no","np","nr","nz","om","pa","pe","pg","ph","pk","pl","pt","pw","py","qa","ro","rs","ru","rw","sa","sb","sc","sd","se","sg","si","sk","sl","sm","sn","so","sr","st","sv","sy","sz","td","tg","th","tj","tl","tm","tn","to","tr","tt","tv","tw","tz","ua","ug","us","uy","uz","va","vc","ve","vn","vu","ws","ye","za","zm","zw"]
     public var clickedImageIndex: Int = -1
     @IBOutlet weak var tableView: UITableView!
+
+    var arrayDate:[Date] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return flags.count/4
@@ -126,8 +130,8 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sendCountrySegue" {
             let destinationController = segue.destination as! CalendarViewController
-            print("보내기 전 \(clickedImageIndex)")
             destinationController.selectCountryIndex = clickedImageIndex
+            destinationController.arrayDate = arrayDate
         }
     }
     func selectCountry(){
