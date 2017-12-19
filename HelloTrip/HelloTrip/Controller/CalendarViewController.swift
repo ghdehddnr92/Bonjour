@@ -25,8 +25,19 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     var endDate:Date? = nil
     var arrayDate:[Date] = []
     
+    var _selectCountryIndex: Int = -1
+    
     //선택된 국가의 배열의 Index
-    var selectCountryIndex:Int? = nil
+    var selectCountryIndex: Int{
+        get{
+            //if let _selectCountryIndex = _selectCountryIndex{
+                return _selectCountryIndex
+            //}
+        }
+        set(newValue){
+            _selectCountryIndex = newValue
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +51,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         calendar.appearance.weekdayTextColor = newPinkColor
         //calendar.appearance.selectionColor = newPinkColor
         
+        print("값 : \(selectCountryIndex)")
         // Do any additional setup after loading the view.
     }
     
@@ -48,16 +60,6 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         // Dispose of any resources that can be recreated.
     }
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-//        let normalizedStartDate = calendar.startOfDayForDate(fromDate)
-//        let normalizedEndDate = calendar.startOfDayForDate(toDate)
-//        var dates: NSMutableArray = []
-//        var currentDate = normalizedStartDate
-//        repeat {
-//            currentDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: currentDate, options: NSCalendarOptions.MatchNextTime)!
-//            dates.addObject(currentDate)
-//        } while !calendar.isDate(currentDate, inSameDayAsDate: normalizedEndDate)
-//        print(dates)
-        
         //print(date+(3600*24)) //문제 해결 !!!!!
         if dateStartFlag == true{
             startDate = date

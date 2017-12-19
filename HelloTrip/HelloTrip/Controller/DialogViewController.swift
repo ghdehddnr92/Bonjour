@@ -68,7 +68,7 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         }
         tappedView.tintColor = UIColor.black
         self.clickedImageIndex = indexPath.row*4 + 0
-        
+        selectCountry()
         print("[\(indexPath.row),1] + \(indexPath.row*4 + 0)")
     }
     @objc func imgTapped2(sender: UITapGestureRecognizer){
@@ -79,7 +79,9 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
-       
+        self.clickedImageIndex = indexPath.row*4 + 1
+        selectCountry()
+        
         print("[\(indexPath.row),2] + \(indexPath.row*4 + 1)")
     }
     @objc func imgTapped3(sender: UITapGestureRecognizer){
@@ -90,6 +92,8 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
+        self.clickedImageIndex = indexPath.row*4 + 2
+        selectCountry()
         print("[\(indexPath.row),3] + \(indexPath.row*4 + 2)")
     }
     @objc func imgTapped4(sender: UITapGestureRecognizer){
@@ -100,7 +104,8 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         guard let indexPath = self.tableView.indexPathForRow(at: touchPointInTableView) else {
             return
         }
-        
+        self.clickedImageIndex = indexPath.row*4 + 3
+        selectCountry()
         print("[\(indexPath.row),4] + \(indexPath.row*4 + 3)")
     }
     
@@ -118,4 +123,14 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sendCountrySegue" {
+            let destinationController = segue.destination as! CalendarViewController
+            print("보내기 전 \(clickedImageIndex)")
+            destinationController.selectCountryIndex = clickedImageIndex
+        }
+    }
+    func selectCountry(){
+        self.performSegue(withIdentifier: "sendCountrySegue", sender: self)
+    }
 }
