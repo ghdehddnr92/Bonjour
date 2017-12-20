@@ -21,11 +21,13 @@
 		5B2E02591FE6C15F00665A2C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02581FE6C15F00665A2C /* VideoViewController.swift */; };
 		5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */; };
 		5B2E02621FE9049200665A2C /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02611FE9049200665A2C /* MyData.swift */; };
+		5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD141FEA351F00E1F172 /* Flag.swift */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
 		5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */; };
 		5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */; };
+		5BC39B661FEA280400A941E3 /* TravelAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */; };
 		5BC48E5B1FD9206200E6C2B9 /* FlagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */; };
 		5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */; };
 		5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */; };
@@ -51,11 +53,13 @@
 		5B2E02581FE6C15F00665A2C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		5B2E02611FE9049200665A2C /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		5B42CD141FEA351F00E1F172 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAddViewController.swift; sourceTree = "<group>"; };
 		5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				5B2E02561FE6C10500665A2C /* CameraViewController.swift */,
 				5B2E02581FE6C15F00665A2C /* VideoViewController.swift */,
 				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
+				5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2E02611FE9049200665A2C /* MyData.swift */,
+				5B42CD141FEA351F00E1F172 /* Flag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,8 +345,10 @@
 				5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */,
 				5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */,
 				5B2E02621FE9049200665A2C /* MyData.swift in Sources */,
+				5BC39B661FEA280400A941E3 /* TravelAddViewController.swift in Sources */,
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
+				5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
 				5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */,

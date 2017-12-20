@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoGalleryViewController: UIViewController {
+class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,5 +18,9 @@ class PhotoGalleryViewController: UIViewController {
             imagePicker.sourceType = .photoLibrary
             self.present(imagePicker, animated: true, completion: nil) }
         // Do any additional setup after loading the view.
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo
+        info: [String : Any]) {
+        
     }
 }
