@@ -22,7 +22,6 @@ class MoneyViewController: UIViewController ,FSCalendarDelegate, FSCalendarDataS
         calendar.appearance.headerTitleColor = newPinkColor
         calendar.appearance.weekdayTextColor = newPinkColor
         calendar.appearance.selectionColor = newPinkColor
-        calendar.scope = .week
         
         // Do any additional setup after loading the view.
     }
