@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-Jd-MgS" customClass="Ho">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -94,7 +94,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-xf-j5M">
-                                <rect key="frame" x="290" y="572" width="75" height="75"/>
+                                <rect key="frame" x="290" y="523" width="75" height="75"/>
                                 <state key="normal" image="f button"/>
                                 <connections>
                                     <segue destination="I1H-HA-jHt" kind="show" id="FhH-ub-vIZ"/>
@@ -120,7 +120,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UWI-L6-HNk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bXY-Vb-1t4" userLabel="Home"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="Home" id="bXY-Vb-1t4" userLabel="Home"/>
                     <navigationItem key="navigationItem" title="Home" id="aN7-vm-57V">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="S81-WT-4Ay">
                             <connections>
@@ -452,7 +452,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ecr-hU-Pll">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="470" id="Msm-s1-HDW" customClass="DiaryTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -541,7 +541,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6kc-aq-A0u"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GyX-CF-N1W"/>
+                    <tabBarItem key="tabBarItem" title="다이어리" image="Edit" id="GyX-CF-N1W" userLabel="다이어리"/>
                     <connections>
                         <outlet property="floatbutton" destination="f3u-Bv-MQi" id="3Fh-FO-Nfk"/>
                         <outlet property="tableView" destination="ecr-hU-Pll" id="isN-Kp-y9d"/>
@@ -767,7 +767,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qSv-1w-vO4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RQL-Fk-UXb"/>
+                    <tabBarItem key="tabBarItem" title="지출" image="Money" id="RQL-Fk-UXb" userLabel="지출"/>
                     <connections>
                         <outlet property="calendar" destination="Nbd-xR-Tni" id="Hs9-Z0-4hu"/>
                         <segue destination="MHB-QK-AUC" kind="show" identifier="moneySegue" id="ayb-6H-VR0"/>
@@ -787,7 +787,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lo0-eU-Rpq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GEU-8F-eYf"/>
+                    <tabBarItem key="tabBarItem" title="지도" image="Map-Pin" id="GEU-8F-eYf" userLabel="지도"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFs-9a-Sgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -813,7 +813,7 @@
                         <color key="tintColor" red="1" green="0.59891369679999995" blue="0.98052730210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YwV-Dl-KL2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Calendar" id="UC9-xU-WeH"/>
+                    <tabBarItem key="tabBarItem" title="달력" image="Calendar" id="UC9-xU-WeH" userLabel="달력"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fos-qS-oUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -896,6 +896,9 @@
         <image name="Calendar" width="18" height="18"/>
         <image name="Credit-Card" width="18" height="18"/>
         <image name="Edit" width="18" height="18"/>
+        <image name="Home" width="18" height="18"/>
+        <image name="Map-Pin" width="18" height="18"/>
+        <image name="Money" width="18" height="18"/>
         <image name="button_compass.png" width="40" height="40"/>
         <image name="f button" width="75" height="75"/>
         <image name="imageView:wLh-VF-IwE:image" width="38" height="20">
@@ -1088,9 +1091,10 @@ AAAAAAAAKag
         <image name="ticket" width="371" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="te0-Z4-Xrw"/>
-        <segue reference="gA5-NR-d7m"/>
-        <segue reference="681-l5-jpI"/>
-        <segue reference="atI-SU-tNs"/>
+        <segue reference="Axw-lR-lMi"/>
+        <segue reference="AeY-8v-5xc"/>
+        <segue reference="oP3-dF-bR3"/>
+        <segue reference="FhH-ub-vIZ"/>
+        <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>
