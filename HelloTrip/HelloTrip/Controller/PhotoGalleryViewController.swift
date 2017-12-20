@@ -22,6 +22,9 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
     @IBAction func openGalleryAction(_ sender: Any) {
         openGallery()
     }
+    @IBAction func unwindToHome(segue: UIStoryboardSegue){
+        dismiss(animated:true, completion:nil)
+    }
     func openGallery(){
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePicker = UIImagePickerController()
