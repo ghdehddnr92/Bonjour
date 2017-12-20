@@ -11,7 +11,8 @@ import UIKit
 
 class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource{
 
-    let flags : [String] = MyData.Container.flags
+    //let flags : [String] = MyData.Container.flag
+    let flags : [Flag] = MyData.Container.flags
     
     public var clickedImageIndex: Int = -1
     @IBOutlet weak var tableView: UITableView!
@@ -19,6 +20,7 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
     var arrayDate:[Date] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return flags.count/4
         return flags.count/4
     }
     
@@ -28,20 +30,21 @@ class DialogViewController: UIViewController, UITableViewDelegate,  UITableViewD
         
         for index in 0..<4{
             if index == 0 {
-                cell.countryLabel1.text = flags[(4*indexPath.row)+index]
-                cell.countryImage1.image = UIImage(named: flags[(4*indexPath.row)+index])
+                //cell.countryLabel1.text = flags[(4*indexPath.row)+index]
+                cell.countryLabel1.text = flags[(4*indexPath.row)+index].fullName
+                cell.countryImage1.image = UIImage(named: flags[(4*indexPath.row)+index].shortenName)
             }
             else if index == 1{
-                cell.countryLabel2.text = flags[(4*indexPath.row)+index]
-                cell.countryImage2.image = UIImage(named: flags[(4*indexPath.row)+index])
+                cell.countryLabel2.text = flags[(4*indexPath.row)+index].fullName
+                cell.countryImage2.image = UIImage(named: flags[(4*indexPath.row)+index].shortenName)
             }
             else if index == 2{
-                cell.countryLabel3.text = flags[(4*indexPath.row)+index]
-                cell.countryImage3.image = UIImage(named: flags[(4*indexPath.row)+index])
+                cell.countryLabel3.text = flags[(4*indexPath.row)+index].fullName
+                cell.countryImage3.image = UIImage(named: flags[(4*indexPath.row)+index].shortenName)
             }
             else {
-                cell.countryLabel4.text = flags[(4*indexPath.row)+index]
-                cell.countryImage4.image = UIImage(named: flags[(4*indexPath.row)+index])
+                cell.countryLabel4.text = flags[(4*indexPath.row)+index].fullName
+                cell.countryImage4.image = UIImage(named: flags[(4*indexPath.row)+index].shortenName)
             }
         }
 

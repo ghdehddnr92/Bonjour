@@ -93,7 +93,6 @@ class MyData{
                           Flag(fullName:"모나코",changeName:"EUR",shortenName:"mc",exchangeRate:1),
                           Flag(fullName:"몰도바",changeName:"MDL",shortenName:"md",exchangeRate:1),
                           Flag(fullName:"마다가스카르",changeName:"MGA",shortenName:"mg",exchangeRate:1),
-                          
                           Flag(fullName:"미얀마",changeName:"MMK",shortenName:"mm",exchangeRate:1),
                           Flag(fullName:"몽골",changeName:"MNT",shortenName:"mn",exchangeRate:1),
                           Flag(fullName:"모리셔스",changeName:"MUR",shortenName:"mu",exchangeRate:1),

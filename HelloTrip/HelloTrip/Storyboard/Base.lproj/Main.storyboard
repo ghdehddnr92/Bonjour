@@ -300,10 +300,10 @@
                                                                                 <constraint firstAttribute="width" constant="40" id="iwY-jo-Uav" userLabel="width = 40"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-WJ-rXi">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-WJ-rXi">
                                                                             <rect key="frame" x="0.0" y="25" width="40" height="56"/>
                                                                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -320,9 +320,9 @@
                                                                                 <constraint firstAttribute="height" constant="25" id="lT8-y4-Vh8"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-1a-nfC">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-1a-nfC">
                                                                             <rect key="frame" x="0.0" y="25" width="40" height="56"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -338,9 +338,9 @@
                                                                                 <constraint firstAttribute="height" constant="25" id="s2S-vU-3SW"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-m2-U3Z">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-m2-U3Z">
                                                                             <rect key="frame" x="0.0" y="25" width="40" height="56"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -356,9 +356,9 @@
                                                                                 <constraint firstAttribute="width" constant="40" id="eIf-qd-zP4"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ8-kR-esw">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZ8-kR-esw">
                                                                             <rect key="frame" x="0.0" y="25" width="40" height="56"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -641,14 +641,42 @@
                     <view key="view" contentMode="scaleToFill" id="FZx-N2-uvN" customClass="DiaryAdd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLE-Hv-JiD">
+                                <rect key="frame" x="67" y="95" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dev-jK-D7t" userLabel="선택 완료">
+                                <rect key="frame" x="256" y="557" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="선택 완료"/>
+                                <connections>
+                                    <segue destination="cRW-P4-qpR" kind="show" id="ma3-mJ-R4L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-t6-sXq">
+                                <rect key="frame" x="100" y="556" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="갤러리"/>
+                                <connections>
+                                    <action selector="openGallery:" destination="b73-jq-lUa" eventType="touchUpInside" id="qga-5n-GWM"/>
+                                    <action selector="openGalleryAction:" destination="b73-jq-lUa" eventType="touchUpInside" id="Bla-pY-DzQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yFG-3d-dlD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="갤러리" id="f1C-2c-Vj0"/>
+                    <connections>
+                        <outlet property="galleryOpenButton" destination="Q5K-t6-sXq" id="Wrb-Pl-u2h"/>
+                        <outlet property="selctFinishButton" destination="dev-jK-D7t" id="UMv-y9-Liu"/>
+                        <outlet property="selectPhotoImage" destination="dLE-Hv-JiD" id="boz-QO-uvY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT1-DY-Uyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4202" y="-995"/>
+            <point key="canvasLocation" x="4200.8000000000002" y="-995.35232383808102"/>
         </scene>
         <!--동영상-->
         <scene sceneID="mDD-dL-h5e">
@@ -657,16 +685,6 @@
                     <view key="view" contentMode="scaleToFill" id="OzD-Yh-qlI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dev-jK-D7t">
-                                <rect key="frame" x="85" y="154" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="cRW-P4-qpR" kind="show" id="ma3-mJ-R4L"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="lkn-4z-nI9"/>
                     </view>
@@ -674,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2TM-Yn-5id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3382" y="-995"/>
+            <point key="canvasLocation" x="3381.5999999999999" y="-995.35232383808102"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w6f-Zz-oOb">
@@ -1026,9 +1044,8 @@ AAAAAAAAKag
         <image name="us" width="38" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Axw-lR-lMi"/>
         <segue reference="gA5-NR-d7m"/>
-        <segue reference="FhH-ub-vIZ"/>
+        <segue reference="681-l5-jpI"/>
         <segue reference="pEF-jv-ReA"/>
     </inferredMetricsTieBreakers>
 </document>

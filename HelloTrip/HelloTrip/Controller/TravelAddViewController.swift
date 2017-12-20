@@ -11,10 +11,11 @@ import UIKit
 class TravelAddViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate
  {
     @IBOutlet weak var selectPhotoImage: UIImageView!
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        picker.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -25,9 +26,11 @@ class TravelAddViewController: UIViewController,UIImagePickerControllerDelegate,
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            print("hi")
             selectPhotoImage.image = selectedImage
             selectPhotoImage.contentMode = .scaleAspectFill
             selectPhotoImage.clipsToBounds = true
+            print(info)
         }
         dismiss(animated: true, completion: nil)
     }

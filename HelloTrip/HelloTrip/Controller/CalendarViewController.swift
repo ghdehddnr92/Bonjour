@@ -11,7 +11,7 @@ import FSCalendar
 
 class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
 
-    let flags : [String] = MyData.Container.flags
+    let flags : [Flag] = MyData.Container.flags
     
     @IBOutlet weak var calendar: FSCalendar!
     fileprivate let gregorian = Calendar(identifier: .gregorian)
@@ -120,7 +120,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     }
     func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage?{
         if selectCountryIndex != -1{
-            return arrayDate.contains(date) ? UIImage(named: flags[selectCountryIndex]) : nil
+            return arrayDate.contains(date) ? UIImage(named: flags[selectCountryIndex].shortenName) : nil
         }
         return nil
     }
