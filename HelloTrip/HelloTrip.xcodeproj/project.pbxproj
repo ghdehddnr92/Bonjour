@@ -22,6 +22,7 @@
 		5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */; };
 		5B2E02621FE9049200665A2C /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02611FE9049200665A2C /* MyData.swift */; };
 		5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD141FEA351F00E1F172 /* Flag.swift */; };
+		5B42CD171FEA839400E1F172 /* MoneyDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
 		5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FC41D1FC5905300628D1B /* MapViewController.swift */; };
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
@@ -54,6 +55,7 @@
 		5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		5B2E02611FE9049200665A2C /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		5B42CD141FEA351F00E1F172 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyDialogViewController.swift; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B4FC41D1FC5905300628D1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				5B2E02581FE6C15F00665A2C /* VideoViewController.swift */,
 				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
 				5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */,
+				5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
 				5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */,
+				5B42CD171FEA839400E1F172 /* MoneyDialogViewController.swift in Sources */,
 				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
 				5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */,
 				5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */,

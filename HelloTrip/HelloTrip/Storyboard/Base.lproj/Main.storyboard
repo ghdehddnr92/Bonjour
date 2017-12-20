@@ -778,7 +778,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nbd-xR-Tni" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="nJ8-rE-rm0" id="z0o-k2-Tii"/>
@@ -798,6 +798,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="RQL-Fk-UXb"/>
                     <connections>
                         <outlet property="calendar" destination="Nbd-xR-Tni" id="Hs9-Z0-4hu"/>
+                        <segue destination="MHB-QK-AUC" kind="show" identifier="moneySegue" id="ayb-6H-VR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbl-QP-Yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -845,6 +846,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fos-qS-oUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1322" y="1084"/>
+        </scene>
+        <!--Money Dialog View Controller-->
+        <scene sceneID="N1N-cf-rX5">
+            <objects>
+                <viewController id="MHB-QK-AUC" customClass="MoneyDialogViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fri-Hi-hnH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKM-R1-ByR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gX0-47-HL3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-K5-HMg">
+                                <rect key="frame" x="30" y="77" width="315" height="514"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행 국가들을 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjZ-V8-DmG" userLabel="지출을 입력하세요">
+                                        <rect key="frame" x="8" y="20" width="171" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-YY-S0V">
+                                        <rect key="frame" x="45" y="242" width="181" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yjZ-V8-DmG" firstAttribute="top" secondItem="Q82-K5-HMg" secondAttribute="top" constant="20" id="jqO-zV-2Mm"/>
+                                    <constraint firstItem="yjZ-V8-DmG" firstAttribute="leading" secondItem="Q82-K5-HMg" secondAttribute="leading" constant="8" id="yS0-BY-Gmx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBK-Ro-Oqg">
+                                <rect key="frame" x="151" y="537" width="46" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="nJ8-rE-rm0" kind="show" identifier="moneyDialogSegue" id="te0-Z4-Xrw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3AG-gc-RdD" firstAttribute="trailing" secondItem="Q82-K5-HMg" secondAttribute="trailing" constant="30" id="16d-sd-D8c" userLabel="Safe Area.trailing = View.trailing "/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="centerX" secondItem="Fri-Hi-hnH" secondAttribute="centerX" id="EuT-gf-Qfq"/>
+                            <constraint firstItem="LKM-R1-ByR" firstAttribute="bottom" secondItem="3AG-gc-RdD" secondAttribute="bottom" id="FS4-bd-nbM"/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="centerY" secondItem="LKM-R1-ByR" secondAttribute="centerY" id="IDd-n3-K4Q"/>
+                            <constraint firstItem="LKM-R1-ByR" firstAttribute="leading" secondItem="Fri-Hi-hnH" secondAttribute="leading" id="SpL-Y9-uUs" userLabel="Visual Effect View.leading = leading"/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="leading" secondItem="3AG-gc-RdD" secondAttribute="leading" constant="30" id="dkv-qp-cFG"/>
+                            <constraint firstAttribute="trailing" secondItem="LKM-R1-ByR" secondAttribute="trailing" id="fev-v1-QSV"/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="centerY" secondItem="Fri-Hi-hnH" secondAttribute="centerY" id="fpR-NQ-14w"/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="centerY" secondItem="Fri-Hi-hnH" secondAttribute="centerY" id="tQN-6z-4uz"/>
+                            <constraint firstItem="Q82-K5-HMg" firstAttribute="top" secondItem="3AG-gc-RdD" secondAttribute="top" constant="57" id="try-ZN-F3L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3AG-gc-RdD"/>
+                    </view>
+                    <connections>
+                        <outlet property="moneyFinishButton" destination="MBK-Ro-Oqg" id="ece-Gt-jrx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dX7-6C-b2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="1854.4227886056974"/>
         </scene>
     </scenes>
     <resources>
@@ -1044,6 +1117,8 @@ AAAAAAAAKag
         <image name="us" width="38" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ayb-6H-VR0"/>
+        <segue reference="te0-Z4-Xrw"/>
         <segue reference="gA5-NR-d7m"/>
         <segue reference="681-l5-jpI"/>
         <segue reference="pEF-jv-ReA"/>

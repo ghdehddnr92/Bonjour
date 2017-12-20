@@ -11,6 +11,9 @@ import FSCalendar
 
 class MoneyViewController: UIViewController ,FSCalendarDelegate, FSCalendarDataSource{
     @IBOutlet weak var calendar: FSCalendar!
+    var selectDate: Date? = nil
+    var totalMoney: String = "300"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,12 +25,29 @@ class MoneyViewController: UIViewController ,FSCalendarDelegate, FSCalendarDataS
         calendar.appearance.headerTitleColor = newPinkColor
         calendar.appearance.weekdayTextColor = newPinkColor
         calendar.appearance.selectionColor = newPinkColor
-        
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        //dialog
+        //blabla
+        selectDate = date
+        selectMoneyDate()
+        //print("선택한 날짜 :\(selectDate)")
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moneySegue" {
+            let destinationController = segue.destination as! MoneyDialogViewController
+             destinationController.selectDate = selectDate
+        }
+    }
+    func selectMoneyDate(){
+        self.performSegue(withIdentifier: "moneySegue", sender: self)
+    }
+    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
+        //print("선택한 날짜 :\(selectDate)")
+        if selectDate != nil{
+            return selectDate == date ? totalMoney : nil
+        }
+        return nil
     }
 }
