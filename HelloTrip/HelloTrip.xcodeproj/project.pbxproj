@@ -20,6 +20,9 @@
 		5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02561FE6C10500665A2C /* CameraViewController.swift */; };
 		5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */; };
 		5B2E02621FE9049200665A2C /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02611FE9049200665A2C /* MyData.swift */; };
+		5B3BB4971FEADA4E00E68C06 /* DiaryAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3BB4961FEADA4E00E68C06 /* DiaryAddTableViewController.swift */; };
+		5B3BB4991FEADE0700E68C06 /* DiaryCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3BB4981FEADE0700E68C06 /* DiaryCameraViewController.swift */; };
+		5B3BB49B1FEADE1D00E68C06 /* DiaryGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3BB49A1FEADE1D00E68C06 /* DiaryGalleryViewController.swift */; };
 		5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD141FEA351F00E1F172 /* Flag.swift */; };
 		5B42CD171FEA839400E1F172 /* MoneyDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */; };
 		5B4FC41A1FC58DD800628D1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FC4191FC58DD800628D1B /* MapKit.framework */; };
@@ -55,6 +58,9 @@
 		5B2E02561FE6C10500665A2C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		5B2E02611FE9049200665A2C /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		5B3BB4961FEADA4E00E68C06 /* DiaryAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddTableViewController.swift; sourceTree = "<group>"; };
+		5B3BB4981FEADE0700E68C06 /* DiaryCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCameraViewController.swift; sourceTree = "<group>"; };
+		5B3BB49A1FEADE1D00E68C06 /* DiaryGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryGalleryViewController.swift; sourceTree = "<group>"; };
 		5B42CD141FEA351F00E1F172 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyDialogViewController.swift; sourceTree = "<group>"; };
 		5B4FC4191FC58DD800628D1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +122,9 @@
 				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
 				5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */,
 				5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */,
+				5B3BB4961FEADA4E00E68C06 /* DiaryAddTableViewController.swift */,
+				5B3BB4981FEADE0700E68C06 /* DiaryCameraViewController.swift */,
+				5B3BB49A1FEADE1D00E68C06 /* DiaryGalleryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,10 +367,13 @@
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B94C3841FEA9DDC00B34EBA /* ImagePickerViewCell.swift in Sources */,
 				5B94C3861FEA9DEC00B34EBA /* DatePickerTableViewCell.swift in Sources */,
+				5B3BB49B1FEADE1D00E68C06 /* DiaryGalleryViewController.swift in Sources */,
 				5B94C3881FEA9E0C00B34EBA /* LocationPickerTableViewCell.swift in Sources */,
 				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
 				5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
+				5B3BB4971FEADA4E00E68C06 /* DiaryAddTableViewController.swift in Sources */,
+				5B3BB4991FEADE0700E68C06 /* DiaryCameraViewController.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
 				5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */,
 				5BC48E5B1FD9206200E6C2B9 /* FlagCollectionViewCell.swift in Sources */,

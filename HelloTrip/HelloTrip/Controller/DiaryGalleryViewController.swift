@@ -8,16 +8,15 @@
 
 import UIKit
 
-class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-
-
+class DiaryGalleryViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
     @IBOutlet weak var selectPhotoImage: UIImageView!
     var selectImageTmp: UIImage? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         openGallery()
     }
-  
+    
     @IBAction func unwindToHome(segue: UIStoryboardSegue){
         dismiss(animated:true, completion:nil)
     }
@@ -32,7 +31,7 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let selectedImage =
-        info[UIImagePickerControllerOriginalImage] as? UIImage {
+            info[UIImagePickerControllerOriginalImage] as? UIImage {
             selectPhotoImage.image = selectedImage
             selectImageTmp = selectedImage
             selectPhotoImage.contentMode = .scaleAspectFill
@@ -43,12 +42,13 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         selectImage()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "selectImageSegue" {
-            let destinationController = segue.destination as! TravelAddViewController
+        if segue.identifier == "selectDiarySegue" {
+            let destinationController = segue.destination as! DiaryAddTableViewController
             destinationController.selectImageTmp = selectImageTmp
         }
     }
     func selectImage(){
-        self.performSegue(withIdentifier: "selectImageSegue", sender: self)
+        self.performSegue(withIdentifier: "selectDiarySegue", sender: self)
     }
 }
+
