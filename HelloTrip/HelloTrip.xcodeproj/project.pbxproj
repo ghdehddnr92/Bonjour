@@ -18,7 +18,6 @@
 		5B10308B1FC7C74D004B4C83 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */; };
 		5B2749821FDA71DA00DD90EA /* HelloTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B2749801FDA71DA00DD90EA /* HelloTrip.xcdatamodeld */; };
 		5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02561FE6C10500665A2C /* CameraViewController.swift */; };
-		5B2E02591FE6C15F00665A2C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02581FE6C15F00665A2C /* VideoViewController.swift */; };
 		5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */; };
 		5B2E02621FE9049200665A2C /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E02611FE9049200665A2C /* MyData.swift */; };
 		5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42CD141FEA351F00E1F172 /* Flag.swift */; };
@@ -51,7 +50,6 @@
 		5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5B2749811FDA71DA00DD90EA /* HelloTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloTrip.xcdatamodel; sourceTree = "<group>"; };
 		5B2E02561FE6C10500665A2C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		5B2E02581FE6C15F00665A2C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		5B2E02611FE9049200665A2C /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		5B42CD141FEA351F00E1F172 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */,
 				5BF242A91FE500A800E1066E /* DialogViewController.swift */,
 				5B2E02561FE6C10500665A2C /* CameraViewController.swift */,
-				5B2E02581FE6C15F00665A2C /* VideoViewController.swift */,
 				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
 				5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */,
 				5B42CD161FEA839400E1F172 /* MoneyDialogViewController.swift */,
@@ -363,7 +360,6 @@
 				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
 				5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */,
 				5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */,
-				5B2E02591FE6C15F00665A2C /* VideoViewController.swift in Sources */,
 				5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
 			);

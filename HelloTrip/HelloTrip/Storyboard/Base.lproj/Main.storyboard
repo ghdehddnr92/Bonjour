@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-Jd-MgS" customClass="Ho">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -94,7 +94,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-xf-j5M">
-                                <rect key="frame" x="290" y="523" width="75" height="75"/>
+                                <rect key="frame" x="290" y="572" width="75" height="75"/>
                                 <state key="normal" image="f button"/>
                                 <connections>
                                     <segue destination="I1H-HA-jHt" kind="show" id="FhH-ub-vIZ"/>
@@ -452,7 +452,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ecr-hU-Pll">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="470" id="Msm-s1-HDW" customClass="DiaryTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -587,7 +587,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="us" translatesAutoresizingMaskIntoConstraints="NO" id="sjc-Co-Lmi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjc-Co-Lmi">
                                 <rect key="frame" x="16" y="107" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="8KI-Xt-IHL"/>
@@ -642,25 +642,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLE-Hv-JiD">
-                                <rect key="frame" x="67" y="95" width="240" height="128"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLE-Hv-JiD">
+                                <rect key="frame" x="67" y="109" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dev-jK-D7t" userLabel="선택 완료">
-                                <rect key="frame" x="256" y="557" width="56" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zys-a5-4tK">
+                                <rect key="frame" x="164" y="267" width="46" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="선택 완료"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="cRW-P4-qpR" kind="show" id="ma3-mJ-R4L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-t6-sXq">
-                                <rect key="frame" x="100" y="556" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="갤러리"/>
-                                <connections>
-                                    <action selector="openGallery:" destination="b73-jq-lUa" eventType="touchUpInside" id="qga-5n-GWM"/>
-                                    <action selector="openGalleryAction:" destination="b73-jq-lUa" eventType="touchUpInside" id="Bla-pY-DzQ"/>
+                                    <segue destination="cRW-P4-qpR" kind="show" identifier="selectImageSegue" id="Fxn-bX-inV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -669,30 +660,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="갤러리" id="f1C-2c-Vj0"/>
                     <connections>
-                        <outlet property="galleryOpenButton" destination="Q5K-t6-sXq" id="Wrb-Pl-u2h"/>
-                        <outlet property="selctFinishButton" destination="dev-jK-D7t" id="UMv-y9-Liu"/>
                         <outlet property="selectPhotoImage" destination="dLE-Hv-JiD" id="boz-QO-uvY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT1-DY-Uyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4200.8000000000002" y="-995.35232383808102"/>
-        </scene>
-        <!--동영상-->
-        <scene sceneID="mDD-dL-h5e">
-            <objects>
-                <viewController id="k1n-tu-gWm" customClass="VideoViewController" customModule="HelloTrip" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OzD-Yh-qlI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="lkn-4z-nI9"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="동영상" id="ilV-NE-50g"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2TM-Yn-5id" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3381.5999999999999" y="-995.35232383808102"/>
+            <point key="canvasLocation" x="3270" y="-995"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w6f-Zz-oOb">
@@ -704,7 +677,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="k1n-tu-gWm" kind="relationship" relationship="viewControllers" id="NTX-oQ-tXL"/>
                         <segue destination="b73-jq-lUa" kind="relationship" relationship="viewControllers" id="eJR-gW-Alu"/>
                         <segue destination="AyN-YN-u7Y" kind="relationship" relationship="viewControllers" id="hiR-Pu-MAB"/>
                     </connections>
@@ -745,7 +717,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTr-Y5-96G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-993" y="-649"/>
+            <point key="canvasLocation" x="-1170" y="-649"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Xzs-dI-LFP">
@@ -1114,13 +1086,11 @@ AAAAAAAAKag
         </image>
         <image name="large ticket" width="393" height="559"/>
         <image name="ticket" width="371" height="146"/>
-        <image name="us" width="38" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ayb-6H-VR0"/>
         <segue reference="te0-Z4-Xrw"/>
         <segue reference="gA5-NR-d7m"/>
         <segue reference="681-l5-jpI"/>
-        <segue reference="pEF-jv-ReA"/>
+        <segue reference="atI-SU-tNs"/>
     </inferredMetricsTieBreakers>
 </document>

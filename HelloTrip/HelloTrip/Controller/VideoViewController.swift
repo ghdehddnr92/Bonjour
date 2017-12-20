@@ -12,7 +12,13 @@ class VideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.allowsEditing = false
+            imagePicker.sourceType = .
+            imagePicker.delegate = self
+            self.present(imagePicker, animated: true, completion: nil)
+        }
         // Do any additional setup after loading the view.
     }
 }
