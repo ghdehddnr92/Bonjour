@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class TravelAddViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate
 {
@@ -50,12 +51,10 @@ class TravelAddViewController: UITableViewController,UIImagePickerControllerDele
             
             print("Saving data to context ...")
             appDelegate.saveContext()
-            
         }
-        dismiss(animated: true, completion: nil)
-        saveTravel()
+     //   saveTravel()
     }
-    func saveTravel(){
-        self.performSegue(withIdentifier: "saveTravelSegue", sender: self)
-    }
+//    func saveTravel(){
+//        self.performSegue(withIdentifier: "saveTravelSegue", sender: self)
+//    }
 }

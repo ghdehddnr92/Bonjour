@@ -54,11 +54,14 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cellIdentifier = "DiaryCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DiaryTableViewCell
-      
+        
         cell.countryLabel.text = trips[indexPath.row].country
         cell.dateLabel.text = trips[indexPath.row].date
         cell.contentLabel.text = trips[indexPath.row].content
-    
+        if let tripImage = trips[indexPath.row].image {
+            cell.Thumbnailimage.image = UIImage(data:tripImage)
+        }
+        
         return cell
         
     }
@@ -70,8 +73,8 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
                 let context = appDelegate.persistentContainer.viewContext
-                let restaurantToDelete = self.fetchResultController.object(at: indexPath)
-                context.delete(restaurantToDelete)
+                let travelToDelete = self.fetchResultController.object(at: indexPath)
+                context.delete(travelToDelete)
                 appDelegate.saveContext()
             }
             // Call completion handler with true to indicate

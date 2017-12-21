@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class DiaryAddTableViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate
 {
     var diary:DiaryMO!
    
     @IBOutlet weak var DatePicker: UITextField!
+    
+    @IBOutlet weak var diaryContentTextField: UITextField!  {
+        didSet{
+            diaryContentTextField.tag = 1
+            diaryContentTextField.becomeFirstResponder()
+            diaryContentTextField.delegate = self
+        }
+    }
     
     @IBOutlet weak var locationSelectButton: UIButton!
     @IBOutlet weak var selectPhotoImage: UIImageView!
@@ -35,11 +44,17 @@ class DiaryAddTableViewController: UITableViewController,UIImagePickerController
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             diary = DiaryMO(context: appDelegate.persistentContainer.viewContext)
             
+            diary.content = diaryContentTextField.text
             
+            if let travelContentImage = selectPhotoImage.image{
+                diary.image = UIImagePNGRepresentation(travelContentImage)
+            }
+
             print("Saving data to context ...")
             appDelegate.saveContext()
             
         }
+        saveDiary()
         dismiss(animated: true, completion: nil)
     }
     func createDatePicker()
@@ -70,6 +85,9 @@ class DiaryAddTableViewController: UITableViewController,UIImagePickerController
         }
         
         self.view.endEditing(true)
+    }
+    func saveDiary(){
+        self.performSegue(withIdentifier: "saveDiarySegue", sender: self)
     }
     
 }

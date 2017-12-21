@@ -10,7 +10,8 @@ import UIKit
 
 class DiaryGalleryViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
-    @IBOutlet weak var selectPhotoImage: UIImageView!
+  
+    @IBOutlet weak var selectDiaryPhoto: UIImageView!
     var selectImageTmp: UIImage? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +33,11 @@ class DiaryGalleryViewController: UIViewController, UIImagePickerControllerDeleg
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let selectedImage =
             info[UIImagePickerControllerOriginalImage] as? UIImage {
-            selectPhotoImage.image = selectedImage
+            print(selectedImage)
+            selectDiaryPhoto.image = selectedImage
             selectImageTmp = selectedImage
-            selectPhotoImage.contentMode = .scaleAspectFill
-            selectPhotoImage.clipsToBounds = true
+            selectDiaryPhoto.contentMode = .scaleAspectFill
+            selectDiaryPhoto.clipsToBounds = true
             print(info)
         }
         dismiss(animated: true, completion: nil)

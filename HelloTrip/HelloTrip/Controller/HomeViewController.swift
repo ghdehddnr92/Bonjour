@@ -10,7 +10,8 @@ import UIKit
 import SideMenu
 import CoreData
 
-class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, NSFetchedResultsControllerDelegate{
+class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate, UISearchResultsUpdating{
+  
     
     var searchController: UISearchController!
     var fetchResultController: NSFetchedResultsController<HomeMO>!
@@ -20,14 +21,14 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
 //    let flags = ["ad","ae","af","ag","al","am","ao","ar","at","au","az","ba","bb","bd","be","bf","bg","bh","bi","bj","bn","bo","br","bs","bt","bw","by","bz","ca","cd","cf","cg","ch","ci","cl","cm","cn","co","cr","cu","cv","cy","cz","de","dj","dk","dm","do","dz","ec","ee","eg","eh","er","es","et","fi","fj","fm","fr","ga","gb","gd","ge","gh","gm","gn","gq","gr","gt","gw","gy","hn","hr","ht","hu","id","ie","il","in","iq","ir","is","it","jm","jo","jp","ke","kg","kh","ki","km","kn","kp","kr","ks","kw","kz","la","lb","lc","li","lk","lr","ls","lt","lu","lv","ly","ma","mc","md","me","mg","mh","mk","ml","mm","mn,","mr","mt","mu","mv","mw","mx","my","mz","na","ne","ng","ni","nl","no","np","nr","nz","om","pa","pe","pg","ph","pk","pl","pt","pw","py","qa","ro","rs","ru","rw","sa","sb","sc","sd","se","sg","si","sk","sl","sm","sn","so","sr","st","sv","sy","sz","td","tg","th","tj","tl","tm","tn","to","tr","tt","tv","tw","tz","ua","ug","us","uy","uz","va","vc","ve","vn","vu","ws","ye","za","zm","zw"]
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "flagCell", for: indexPath) as! FlagCollectionViewCell
-        
-        return cell
-    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 0
+//    }
+//    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "flagCell", for: indexPath) as! FlagCollectionViewCell
+//
+//        return cell
+//    }
 
     @IBOutlet weak var FlagCollectionView: UICollectionView!
     @IBOutlet weak var backgroundBlack: UIImageView!
@@ -96,7 +97,8 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
                 print(error)
             }
         }
-        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
     }
     
     @objc func btnMenuAction() {
@@ -121,19 +123,33 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return trips.count
+       // return trips.count
+        if searchController.isActive {
+            return searchResults.count
+        } else {
+            return trips.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
           let cellIdentifier = "HomeCell"
           let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
-        cell.tripNameLabel.text = trips[indexPath.row].title
-        cell.tripTimeLabel.text = trips[indexPath.row].date
+        
+        let trip = (searchController.isActive) ? searchResults[indexPath.row] : trips[indexPath.row]
+//        cell.tripNameLabel.text = trips[indexPath.row].title
+//        cell.tripTimeLabel.text = trips[indexPath.row].date
+//
+//        if let tripImage = trips[indexPath.row].image{
+//                cell.Thumbnailimage.image = UIImage(data:tripImage)
+//        }
+      
+        cell.tripNameLabel.text = trip.title
+        cell.tripTimeLabel.text = trip.date
         
         if let tripImage = trips[indexPath.row].image{
-                cell.Thumbnailimage.image = UIImage(data:tripImage)
+            cell.Thumbnailimage.image = UIImage(data:tripImage)
         }
-      
+        
         return cell
     }
     
@@ -142,12 +158,19 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete"){
             (action, sourceView, completionHandler)in
 
-            self.trips.remove(at: indexPath.row)
-
-            self.tableView.deleteRows(at: [indexPath], with: .fade)
-
+//            self.trips.remove(at: indexPath.row)
+//
+//            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            // Delete the row from the data store
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                let context = appDelegate.persistentContainer.viewContext
+                let tripToDelete = self.fetchResultController.object(at: indexPath)
+                context.delete(tripToDelete)
+                appDelegate.saveContext()
+            }
             completionHandler(true)
         }
+     
 
         deleteAction.backgroundColor = UIColor(red: 231.0/255.0, green : 76.0/255.0, blue: 60.0/255.0, alpha: 1.0)
         //deleAction.image = UIImage(named: "delete")
@@ -183,7 +206,19 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
     }
-    
+    func filterContent(for searchText: String) {
+        searchResults = trips.filter({ (home) -> Bool in
+            if let name = home.title {
+                let isMatch = name.localizedCaseInsensitiveContains(searchText)
+                return isMatch
+            }
+            return false })
+    }
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            filterContent(for: searchText)
+            tableView.reloadData() }
+    }
 }
 
 extension HomeViewController: SidebarViewDelegate {
