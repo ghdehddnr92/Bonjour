@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-Jd-MgS" customClass="Ho">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="150" id="ui5-1u-qNC" customClass="HomeTableViewCell" customModule="HelloTrip" customModuleProvider="target">
@@ -94,7 +94,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-xf-j5M">
-                                <rect key="frame" x="290" y="523" width="75" height="75"/>
+                                <rect key="frame" x="290" y="572" width="75" height="75"/>
                                 <state key="normal" image="f button"/>
                                 <connections>
                                     <segue destination="I1H-HA-jHt" kind="show" id="FhH-ub-vIZ"/>
@@ -661,6 +661,10 @@
                                                     <rect key="frame" x="164" y="6" width="46" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="buttonSaveAction:" destination="niP-9Z-kal" eventType="touchUpInside" id="LWA-Qz-vri"/>
+                                                        <segue destination="Pya-co-j8i" kind="show" id="f83-1H-cME"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1091,7 +1095,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSG-go-neb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="i2i-Hs-fre" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5222" y="989"/>
+            <point key="canvasLocation" x="5221.6000000000004" y="988.15592203898063"/>
         </scene>
     </scenes>
     <resources>
@@ -1295,6 +1299,6 @@ AAAAAAAAKag
     <inferredMetricsTieBreakers>
         <segue reference="AeY-8v-5xc"/>
         <segue reference="FhH-ub-vIZ"/>
-        <segue reference="pEF-jv-ReA"/>
+        <segue reference="f83-1H-cME"/>
     </inferredMetricsTieBreakers>
 </document>

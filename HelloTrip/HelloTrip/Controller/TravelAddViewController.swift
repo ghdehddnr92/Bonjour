@@ -19,7 +19,14 @@ class TravelAddViewController: UITableViewController,UIImagePickerControllerDele
     
     @IBOutlet weak var travelDateLabel: UILabel!
     @IBOutlet weak var travelCountryLabel: UILabel!
-    @IBOutlet weak var travelTitleTextField: UITextField!
+    @IBOutlet weak var travelTitleTextField: UITextField!{
+        didSet{
+            travelTitleTextField.tag = 1
+            travelTitleTextField.becomeFirstResponder()
+            travelTitleTextField.delegate = self
+        }
+    }
+    
     @IBOutlet weak var selectPhtotoImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +38,24 @@ class TravelAddViewController: UITableViewController,UIImagePickerControllerDele
         // Do any additional setup after loading the view.
     }
    
-    @IBAction func saveAction(_ sender: Any) {
+ 
+    @IBAction func buttonSaveAction(_ sender: AnyObject) {
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             home = HomeMO(context: appDelegate.persistentContainer.viewContext)
+            home.title = travelTitleTextField.text
             
+            if let travelHomeImage = selectPhtotoImage.image{
+                home.image = UIImagePNGRepresentation(travelHomeImage)
+            }
             
             print("Saving data to context ...")
             appDelegate.saveContext()
             
         }
-          dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+        saveTravel()
+    }
+    func saveTravel(){
+        self.performSegue(withIdentifier: "saveTravelSegue", sender: self)
     }
 }
