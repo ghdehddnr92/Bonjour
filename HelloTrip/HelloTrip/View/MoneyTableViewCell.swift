@@ -1,18 +1,20 @@
 //
-//  HomeTableViewCell.swift
+//  MoneyTableViewCell.swift
 //  HelloTrip
 //
-//  Created by dong wook on 2017. 11. 24..
+//  Created by dong wook on 2017. 12. 21..
 //  Copyright © 2017년 SSU. All rights reserved.
 //
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
-    
-    @IBOutlet var Thumbnailimage : UIImageView!
-    @IBOutlet weak var tripNameLabel: UILabel!
-    @IBOutlet weak var tripTimeLabel: UILabel!
+class MoneyTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var spendItem: UILabel!
+    @IBOutlet weak var changeBeforeMoney: UILabel!
+    @IBOutlet weak var changeBeforeRate: UILabel!
+    @IBOutlet weak var changeAfterMoney: UILabel!
+    @IBOutlet weak var changeAfterRate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

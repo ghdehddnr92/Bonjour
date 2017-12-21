@@ -8,19 +8,38 @@
 
 import UIKit
 
-class MoneyDialogViewController: UIViewController {
+class MoneyDialogViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
+    
     var selectDate: Date? = nil
     
-    @IBOutlet weak var moneyFinishButton: UIButton!
+  
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        switch indexPath.row {
+        
+        case 0 :
+            let cellIdentifier = "MoneyAddTableViewCell"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MoneyAddTableViewCell
+            
+            return cell
+        default :
+            let cellIdentifier = "MoneyTableViewCell"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MoneyTableViewCell
+            
+            return cell
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

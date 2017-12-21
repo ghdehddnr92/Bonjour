@@ -30,11 +30,10 @@
 		5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */; };
 		5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */; };
 		5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */; };
+		5BA3EA501FEB913B00B41E21 /* SpendingAddTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3EA4F1FEB913B00B41E21 /* SpendingAddTableTableViewController.swift */; };
+		5BA3EA521FEB945D00B41E21 /* MoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3EA511FEB945D00B41E21 /* MoneyTableViewCell.swift */; };
+		5BA3EA541FEB97AE00B41E21 /* MoneyAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3EA531FEB97AE00B41E21 /* MoneyAddTableViewCell.swift */; };
 		5BC39B661FEA280400A941E3 /* TravelAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */; };
-		5BC48E5B1FD9206200E6C2B9 /* FlagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */; };
-		5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */; };
-		5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */; };
-		5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */; };
 		5BD95D711FCEC8E400086634 /* DiaryAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD95D701FCEC8E400086634 /* DiaryAddController.swift */; };
 		5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */; };
 		5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF242A91FE500A800E1066E /* DialogViewController.swift */; };
@@ -65,11 +64,10 @@
 		5B58E3BE1FCA99C1007EE943 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		5BA3EA4F1FEB913B00B41E21 /* SpendingAddTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingAddTableTableViewController.swift; sourceTree = "<group>"; };
+		5BA3EA511FEB945D00B41E21 /* MoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTableViewCell.swift; sourceTree = "<group>"; };
+		5BA3EA531FEB97AE00B41E21 /* MoneyAddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAddTableViewCell.swift; sourceTree = "<group>"; };
 		5BC39B651FEA280300A941E3 /* TravelAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAddViewController.swift; sourceTree = "<group>"; };
-		5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagCollectionViewCell.swift; sourceTree = "<group>"; };
-		5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
-		5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		5BD95D701FCEC8E400086634 /* DiaryAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddController.swift; sourceTree = "<group>"; };
 		5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTableViewCell.swift; sourceTree = "<group>"; };
 		5BF242A91FE500A800E1066E /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
@@ -108,9 +106,7 @@
 				5B10308A1FC7C74D004B4C83 /* CalendarViewController.swift */,
 				5B58E3C31FCAB81C007EE943 /* MoneyViewController.swift */,
 				5B58E3C71FCAD15C007EE943 /* DiaryViewController.swift */,
-				5BD95D6E1FCEBCFD00086634 /* UISideMenuNavigationController.swift */,
 				5BD95D701FCEC8E400086634 /* DiaryAddController.swift */,
-				5BD1D0F21FD1A2A500706D13 /* EditProfileViewController.swift */,
 				5BF242A91FE500A800E1066E /* DialogViewController.swift */,
 				5B2E02561FE6C10500665A2C /* CameraViewController.swift */,
 				5B2E025A1FE6C21800665A2C /* PhotoGalleryViewController.swift */,
@@ -119,6 +115,7 @@
 				5B3BB4961FEADA4E00E68C06 /* DiaryAddTableViewController.swift */,
 				5B3BB4981FEADE0700E68C06 /* DiaryCameraViewController.swift */,
 				5B3BB49A1FEADE1D00E68C06 /* DiaryGalleryViewController.swift */,
+				5BA3EA4F1FEB913B00B41E21 /* SpendingAddTableTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,9 +159,9 @@
 			children = (
 				5B1030861FC7C51C004B4C83 /* HomeTableViewCell.swift */,
 				5B1030881FC7C53C004B4C83 /* DiaryTableViewCell.swift */,
-				5BD1D0F41FD1A57B00706D13 /* SidebarView.swift */,
-				5BC48E5A1FD9206200E6C2B9 /* FlagCollectionViewCell.swift */,
 				5BF242A51FE4FA0A00E1066E /* DialogTableViewCell.swift */,
+				5BA3EA511FEB945D00B41E21 /* MoneyTableViewCell.swift */,
+				5BA3EA531FEB97AE00B41E21 /* MoneyAddTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA3EA501FEB913B00B41E21 /* SpendingAddTableTableViewController.swift in Sources */,
 				5B58E3BF1FCA99C1007EE943 /* UIColor+Ext.swift in Sources */,
 				5B2749821FDA71DA00DD90EA /* HelloTrip.xcdatamodeld in Sources */,
 				5B58E3C81FCAD15D007EE943 /* DiaryViewController.swift in Sources */,
@@ -357,21 +355,19 @@
 				5BC39B661FEA280400A941E3 /* TravelAddViewController.swift in Sources */,
 				2DA34DA81FBDE28100876BF5 /* HomeViewController.swift in Sources */,
 				5B3BB49B1FEADE1D00E68C06 /* DiaryGalleryViewController.swift in Sources */,
+				5BA3EA521FEB945D00B41E21 /* MoneyTableViewCell.swift in Sources */,
 				5B58E3C41FCAB81C007EE943 /* MoneyViewController.swift in Sources */,
 				5B42CD151FEA351F00E1F172 /* Flag.swift in Sources */,
 				5B1030891FC7C53C004B4C83 /* DiaryTableViewCell.swift in Sources */,
 				5B3BB4971FEADA4E00E68C06 /* DiaryAddTableViewController.swift in Sources */,
 				5B3BB4991FEADE0700E68C06 /* DiaryCameraViewController.swift in Sources */,
 				5B4FC41E1FC5905300628D1B /* MapViewController.swift in Sources */,
-				5BD1D0F31FD1A2A500706D13 /* EditProfileViewController.swift in Sources */,
-				5BC48E5B1FD9206200E6C2B9 /* FlagCollectionViewCell.swift in Sources */,
-				5BD95D6F1FCEBCFD00086634 /* UISideMenuNavigationController.swift in Sources */,
 				5B1030871FC7C51C004B4C83 /* HomeTableViewCell.swift in Sources */,
 				5BF242AA1FE500A800E1066E /* DialogViewController.swift in Sources */,
 				5B42CD171FEA839400E1F172 /* MoneyDialogViewController.swift in Sources */,
-				5BD1D0F51FD1A57B00706D13 /* SidebarView.swift in Sources */,
 				5B2E02571FE6C10500665A2C /* CameraViewController.swift in Sources */,
 				5BF242A61FE4FA0A00E1066E /* DialogTableViewCell.swift in Sources */,
+				5BA3EA541FEB97AE00B41E21 /* MoneyAddTableViewCell.swift in Sources */,
 				5B2E025B1FE6C21800665A2C /* PhotoGalleryViewController.swift in Sources */,
 				2DA34DA61FBDE28100876BF5 /* AppDelegate.swift in Sources */,
 			);
